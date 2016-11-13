@@ -24,8 +24,8 @@
 		915CDEE51DD8EC6F0032817F /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE41DD8EC6F0032817F /* Company.swift */; };
 		915CDEE71DD8ECD50032817F /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE61DD8ECD50032817F /* Favorite.swift */; };
 		915CDEE91DD8FEF00032817F /* AccoridionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */; };
-		919E96081DD9070500292231 /* ALSingleLineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E96071DD9070500292231 /* ALSingleLineHeaderView.swift */; };
-		919E960A1DD9075800292231 /* ALSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E96091DD9075800292231 /* ALSeparatorView.swift */; };
+		919E960F1DD913B500292231 /* ALSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E960D1DD913B500292231 /* ALSeparatorView.swift */; };
+		919E96121DD913DD00292231 /* ALSingleLineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E96111DD913DD00292231 /* ALSingleLineHeaderView.swift */; };
 		FACD8132ED281D8512243DE8 /* Pods_fiNDme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB4A0BA1A096FA0B84FC809 /* Pods_fiNDme.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +52,8 @@
 		915CDEE41DD8EC6F0032817F /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		915CDEE61DD8ECD50032817F /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccoridionViewController.swift; sourceTree = "<group>"; };
-		919E96071DD9070500292231 /* ALSingleLineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ALSingleLineHeaderView.swift; path = "../../ALAccordion/Example/ALAccordion Example/Views/Headers/ALSingleLineHeaderView.swift"; sourceTree = "<group>"; };
-		919E96091DD9075800292231 /* ALSeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ALSeparatorView.swift; path = "../../ALAccordion/Example/ALAccordion Example/Views/ALSeparatorView.swift"; sourceTree = "<group>"; };
+		919E960D1DD913B500292231 /* ALSeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALSeparatorView.swift; sourceTree = "<group>"; };
+		919E96111DD913DD00292231 /* ALSingleLineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ALSingleLineHeaderView.swift; path = Headers/ALSingleLineHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +140,8 @@
 		9143F7651DD0F6470030368D /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				919E96091DD9075800292231 /* ALSeparatorView.swift */,
-				919E96071DD9070500292231 /* ALSingleLineHeaderView.swift */,
+				919E960D1DD913B500292231 /* ALSeparatorView.swift */,
+				919E96111DD913DD00292231 /* ALSingleLineHeaderView.swift */,
 				9143F7491DD0F3150030368D /* AppDelegate.swift */,
 				9143F7521DD0F3150030368D /* Assets.xcassets */,
 				9143F7541DD0F3150030368D /* LaunchScreen.storyboard */,
@@ -288,14 +288,14 @@
 			files = (
 				9143F7631DD0F5BF0030368D /* ProfileViewController.swift in Sources */,
 				9143F76C1DD0FB220030368D /* Colors.swift in Sources */,
+				919E96121DD913DD00292231 /* ALSingleLineHeaderView.swift in Sources */,
+				919E960F1DD913B500292231 /* ALSeparatorView.swift in Sources */,
 				915CDEE71DD8ECD50032817F /* Favorite.swift in Sources */,
 				9143F76A1DD0FA910030368D /* TabBarController.swift in Sources */,
 				915CDEE91DD8FEF00032817F /* AccoridionViewController.swift in Sources */,
-				919E96081DD9070500292231 /* ALSingleLineHeaderView.swift in Sources */,
 				9143F74E1DD0F3150030368D /* ContactViewController.swift in Sources */,
 				915CDEE11DD8EA330032817F /* CompanyViewController.swift in Sources */,
 				9143F74A1DD0F3150030368D /* AppDelegate.swift in Sources */,
-				919E960A1DD9075800292231 /* ALSeparatorView.swift in Sources */,
 				915CDEE31DD8EC480032817F /* Companies.swift in Sources */,
 				9143F7681DD0F6700030368D /* Profile.swift in Sources */,
 				9143F74C1DD0F3150030368D /* HomeViewController.swift in Sources */,
