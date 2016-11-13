@@ -1,0 +1,6 @@
+framework module Pods_fiNDme {
+  umbrella header "Pods-fiNDme-umbrella.h"
+
+  export *
+  module * { export * }
+}

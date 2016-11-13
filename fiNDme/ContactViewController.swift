@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  ContactViewController.swift
 //  fiNDme
 //
 //  Created by Cory Jbara on 11/7/16.
@@ -8,11 +8,14 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ContactViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

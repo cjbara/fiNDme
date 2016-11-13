@@ -8,22 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		9143F74A1DD0F3150030368D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7491DD0F3150030368D /* AppDelegate.swift */; };
-		9143F74C1DD0F3150030368D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F74B1DD0F3150030368D /* FirstViewController.swift */; };
-		9143F74E1DD0F3150030368D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F74D1DD0F3150030368D /* SecondViewController.swift */; };
+		9143F74C1DD0F3150030368D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F74B1DD0F3150030368D /* HomeViewController.swift */; };
+		9143F74E1DD0F3150030368D /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F74D1DD0F3150030368D /* ContactViewController.swift */; };
 		9143F7511DD0F3150030368D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9143F74F1DD0F3150030368D /* Main.storyboard */; };
 		9143F7531DD0F3150030368D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9143F7521DD0F3150030368D /* Assets.xcassets */; };
 		9143F7561DD0F3150030368D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9143F7541DD0F3150030368D /* LaunchScreen.storyboard */; };
+		9143F75F1DD0F5A70030368D /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F75E1DD0F5A70030368D /* FindViewController.swift */; };
+		9143F7611DD0F5B30030368D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7601DD0F5B30030368D /* MapViewController.swift */; };
+		9143F7631DD0F5BF0030368D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7621DD0F5BF0030368D /* ProfileViewController.swift */; };
+		9143F7681DD0F6700030368D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7671DD0F6700030368D /* Profile.swift */; };
+		9143F76A1DD0FA910030368D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7691DD0FA910030368D /* TabBarController.swift */; };
+		9143F76C1DD0FB220030368D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F76B1DD0FB220030368D /* Colors.swift */; };
+		FACD8132ED281D8512243DE8 /* Pods_fiNDme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB4A0BA1A096FA0B84FC809 /* Pods_fiNDme.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A7B6904835C1839542CFE6C /* Pods-fiNDme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiNDme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiNDme/Pods-fiNDme.debug.xcconfig"; sourceTree = "<group>"; };
+		5DE8CD1C66DF5FDD1F28F55E /* Pods-fiNDme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiNDme.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiNDme/Pods-fiNDme.release.xcconfig"; sourceTree = "<group>"; };
+		5FB4A0BA1A096FA0B84FC809 /* Pods_fiNDme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiNDme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9143F7461DD0F3150030368D /* fiNDme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fiNDme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9143F7491DD0F3150030368D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9143F74B1DD0F3150030368D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		9143F74D1DD0F3150030368D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9143F74B1DD0F3150030368D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9143F74D1DD0F3150030368D /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		9143F7501DD0F3150030368D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9143F7521DD0F3150030368D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9143F7551DD0F3150030368D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9143F7571DD0F3150030368D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9143F75E1DD0F5A70030368D /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		9143F7601DD0F5B30030368D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9143F7621DD0F5BF0030368D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9143F7671DD0F6700030368D /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		9143F7691DD0FA910030368D /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		9143F76B1DD0FB220030368D /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACD8132ED281D8512243DE8 /* Pods_fiNDme.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24899E1800FDADD674AB65BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A7B6904835C1839542CFE6C /* Pods-fiNDme.debug.xcconfig */,
+				5DE8CD1C66DF5FDD1F28F55E /* Pods-fiNDme.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		45E26F0112191C772BD0B816 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FB4A0BA1A096FA0B84FC809 /* Pods_fiNDme.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9143F73D1DD0F3150030368D = {
 			isa = PBXGroup;
 			children = (
 				9143F7481DD0F3150030368D /* fiNDme */,
 				9143F7471DD0F3150030368D /* Products */,
+				24899E1800FDADD674AB65BD /* Pods */,
+				45E26F0112191C772BD0B816 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +92,53 @@
 		9143F7481DD0F3150030368D /* fiNDme */ = {
 			isa = PBXGroup;
 			children = (
-				9143F7491DD0F3150030368D /* AppDelegate.swift */,
-				9143F74B1DD0F3150030368D /* FirstViewController.swift */,
-				9143F74D1DD0F3150030368D /* SecondViewController.swift */,
+				9143F7661DD0F6540030368D /* Models */,
+				9143F75D1DD0F40A0030368D /* ViewControllers */,
+				9143F7641DD0F6410030368D /* Views */,
+				9143F7651DD0F6470030368D /* Misc */,
+			);
+			path = fiNDme;
+			sourceTree = "<group>";
+		};
+		9143F75D1DD0F40A0030368D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9143F74B1DD0F3150030368D /* HomeViewController.swift */,
+				9143F74D1DD0F3150030368D /* ContactViewController.swift */,
+				9143F75E1DD0F5A70030368D /* FindViewController.swift */,
+				9143F7601DD0F5B30030368D /* MapViewController.swift */,
+				9143F7621DD0F5BF0030368D /* ProfileViewController.swift */,
+				9143F7691DD0FA910030368D /* TabBarController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9143F7641DD0F6410030368D /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				9143F74F1DD0F3150030368D /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9143F7651DD0F6470030368D /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				9143F7491DD0F3150030368D /* AppDelegate.swift */,
 				9143F7521DD0F3150030368D /* Assets.xcassets */,
 				9143F7541DD0F3150030368D /* LaunchScreen.storyboard */,
 				9143F7571DD0F3150030368D /* Info.plist */,
 			);
-			path = fiNDme;
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		9143F7661DD0F6540030368D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9143F7671DD0F6700030368D /* Profile.swift */,
+				9143F76B1DD0FB220030368D /* Colors.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9143F75A1DD0F3150030368D /* Build configuration list for PBXNativeTarget "fiNDme" */;
 			buildPhases = (
+				BB7617B64C6794136CD36016 /* Check Pods Manifest.lock */,
 				9143F7421DD0F3150030368D /* Sources */,
 				9143F7431DD0F3150030368D /* Frameworks */,
 				9143F7441DD0F3150030368D /* Resources */,
+				7C73301395F99768C55CB5D4 /* Embed Pods Frameworks */,
+				616486F23D69526923D47C88 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +176,7 @@
 				TargetAttributes = {
 					9143F7451DD0F3150030368D = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -134,14 +212,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		616486F23D69526923D47C88 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiNDme/Pods-fiNDme-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C73301395F99768C55CB5D4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiNDme/Pods-fiNDme-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB7617B64C6794136CD36016 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9143F7421DD0F3150030368D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9143F74E1DD0F3150030368D /* SecondViewController.swift in Sources */,
+				9143F7631DD0F5BF0030368D /* ProfileViewController.swift in Sources */,
+				9143F76C1DD0FB220030368D /* Colors.swift in Sources */,
+				9143F76A1DD0FA910030368D /* TabBarController.swift in Sources */,
+				9143F74E1DD0F3150030368D /* ContactViewController.swift in Sources */,
 				9143F74A1DD0F3150030368D /* AppDelegate.swift in Sources */,
-				9143F74C1DD0F3150030368D /* FirstViewController.swift in Sources */,
+				9143F7681DD0F6700030368D /* Profile.swift in Sources */,
+				9143F74C1DD0F3150030368D /* HomeViewController.swift in Sources */,
+				9143F7611DD0F5B30030368D /* MapViewController.swift in Sources */,
+				9143F75F1DD0F5A70030368D /* FindViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +394,7 @@
 		};
 		9143F75B1DD0F3150030368D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7B6904835C1839542CFE6C /* Pods-fiNDme.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = fiNDme/Info.plist;
@@ -274,6 +407,7 @@
 		};
 		9143F75C1DD0F3150030368D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE8CD1C66DF5FDD1F28F55E /* Pods-fiNDme.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = fiNDme/Info.plist;
@@ -303,6 +437,7 @@
 				9143F75C1DD0F3150030368D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
