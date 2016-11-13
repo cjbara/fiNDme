@@ -4,6 +4,7 @@
 use_frameworks!
 
 target 'fiNDme' do
+pod "ALAccordion"
 
 end
 

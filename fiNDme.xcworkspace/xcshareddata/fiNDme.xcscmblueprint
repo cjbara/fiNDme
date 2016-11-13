@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DECC8ED4EE8D685B07D0ACFF8F49BEB7CA278EAC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8BA78FA4F404EE525DC65FDD9EB631AA800A1822" : 9223372036854775807,
+    "DECC8ED4EE8D685B07D0ACFF8F49BEB7CA278EAC" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3E2B34EE-A181-4D8A-B149-8EB238F6B609",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8BA78FA4F404EE525DC65FDD9EB631AA800A1822" : "ALAccordion\/",
+    "DECC8ED4EE8D685B07D0ACFF8F49BEB7CA278EAC" : "findme\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "fiNDme",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "fiNDme.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alliants\/ALAccordion.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8BA78FA4F404EE525DC65FDD9EB631AA800A1822"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cjbara\/fiNDme.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DECC8ED4EE8D685B07D0ACFF8F49BEB7CA278EAC"
+    }
+  ]
+}

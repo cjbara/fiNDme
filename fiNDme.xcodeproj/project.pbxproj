@@ -19,6 +19,13 @@
 		9143F7681DD0F6700030368D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7671DD0F6700030368D /* Profile.swift */; };
 		9143F76A1DD0FA910030368D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7691DD0FA910030368D /* TabBarController.swift */; };
 		9143F76C1DD0FB220030368D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F76B1DD0FB220030368D /* Colors.swift */; };
+		915CDEE11DD8EA330032817F /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE01DD8EA330032817F /* CompanyViewController.swift */; };
+		915CDEE31DD8EC480032817F /* Companies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE21DD8EC480032817F /* Companies.swift */; };
+		915CDEE51DD8EC6F0032817F /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE41DD8EC6F0032817F /* Company.swift */; };
+		915CDEE71DD8ECD50032817F /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE61DD8ECD50032817F /* Favorite.swift */; };
+		915CDEE91DD8FEF00032817F /* AccoridionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */; };
+		919E96081DD9070500292231 /* ALSingleLineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E96071DD9070500292231 /* ALSingleLineHeaderView.swift */; };
+		919E960A1DD9075800292231 /* ALSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E96091DD9075800292231 /* ALSeparatorView.swift */; };
 		FACD8132ED281D8512243DE8 /* Pods_fiNDme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB4A0BA1A096FA0B84FC809 /* Pods_fiNDme.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +47,13 @@
 		9143F7671DD0F6700030368D /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		9143F7691DD0FA910030368D /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9143F76B1DD0FB220030368D /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		915CDEE01DD8EA330032817F /* CompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		915CDEE21DD8EC480032817F /* Companies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Companies.swift; sourceTree = "<group>"; };
+		915CDEE41DD8EC6F0032817F /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		915CDEE61DD8ECD50032817F /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccoridionViewController.swift; sourceTree = "<group>"; };
+		919E96071DD9070500292231 /* ALSingleLineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ALSingleLineHeaderView.swift; path = "../../ALAccordion/Example/ALAccordion Example/Views/Headers/ALSingleLineHeaderView.swift"; sourceTree = "<group>"; };
+		919E96091DD9075800292231 /* ALSeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ALSeparatorView.swift; path = "../../ALAccordion/Example/ALAccordion Example/Views/ALSeparatorView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +123,8 @@
 				9143F7601DD0F5B30030368D /* MapViewController.swift */,
 				9143F7621DD0F5BF0030368D /* ProfileViewController.swift */,
 				9143F7691DD0FA910030368D /* TabBarController.swift */,
+				915CDEE01DD8EA330032817F /* CompanyViewController.swift */,
+				915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -124,6 +140,8 @@
 		9143F7651DD0F6470030368D /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				919E96091DD9075800292231 /* ALSeparatorView.swift */,
+				919E96071DD9070500292231 /* ALSingleLineHeaderView.swift */,
 				9143F7491DD0F3150030368D /* AppDelegate.swift */,
 				9143F7521DD0F3150030368D /* Assets.xcassets */,
 				9143F7541DD0F3150030368D /* LaunchScreen.storyboard */,
@@ -137,6 +155,9 @@
 			children = (
 				9143F7671DD0F6700030368D /* Profile.swift */,
 				9143F76B1DD0FB220030368D /* Colors.swift */,
+				915CDEE61DD8ECD50032817F /* Favorite.swift */,
+				915CDEE21DD8EC480032817F /* Companies.swift */,
+				915CDEE41DD8EC6F0032817F /* Company.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -148,12 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9143F75A1DD0F3150030368D /* Build configuration list for PBXNativeTarget "fiNDme" */;
 			buildPhases = (
-				BB7617B64C6794136CD36016 /* Check Pods Manifest.lock */,
+				BB7617B64C6794136CD36016 /* [CP] Check Pods Manifest.lock */,
 				9143F7421DD0F3150030368D /* Sources */,
 				9143F7431DD0F3150030368D /* Frameworks */,
 				9143F7441DD0F3150030368D /* Resources */,
-				7C73301395F99768C55CB5D4 /* Embed Pods Frameworks */,
-				616486F23D69526923D47C88 /* Copy Pods Resources */,
+				7C73301395F99768C55CB5D4 /* [CP] Embed Pods Frameworks */,
+				616486F23D69526923D47C88 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,14 +234,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		616486F23D69526923D47C88 /* Copy Pods Resources */ = {
+		616486F23D69526923D47C88 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,14 +249,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiNDme/Pods-fiNDme-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7C73301395F99768C55CB5D4 /* Embed Pods Frameworks */ = {
+		7C73301395F99768C55CB5D4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,19 +264,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiNDme/Pods-fiNDme-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BB7617B64C6794136CD36016 /* Check Pods Manifest.lock */ = {
+		BB7617B64C6794136CD36016 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -267,13 +288,20 @@
 			files = (
 				9143F7631DD0F5BF0030368D /* ProfileViewController.swift in Sources */,
 				9143F76C1DD0FB220030368D /* Colors.swift in Sources */,
+				915CDEE71DD8ECD50032817F /* Favorite.swift in Sources */,
 				9143F76A1DD0FA910030368D /* TabBarController.swift in Sources */,
+				915CDEE91DD8FEF00032817F /* AccoridionViewController.swift in Sources */,
+				919E96081DD9070500292231 /* ALSingleLineHeaderView.swift in Sources */,
 				9143F74E1DD0F3150030368D /* ContactViewController.swift in Sources */,
+				915CDEE11DD8EA330032817F /* CompanyViewController.swift in Sources */,
 				9143F74A1DD0F3150030368D /* AppDelegate.swift in Sources */,
+				919E960A1DD9075800292231 /* ALSeparatorView.swift in Sources */,
+				915CDEE31DD8EC480032817F /* Companies.swift in Sources */,
 				9143F7681DD0F6700030368D /* Profile.swift in Sources */,
 				9143F74C1DD0F3150030368D /* HomeViewController.swift in Sources */,
 				9143F7611DD0F5B30030368D /* MapViewController.swift in Sources */,
 				9143F75F1DD0F5A70030368D /* FindViewController.swift in Sources */,
+				915CDEE51DD8EC6F0032817F /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
