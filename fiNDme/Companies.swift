@@ -11,4 +11,17 @@ import Foundation
 class Companies {
     //var companies: [Company]
     
+    var companyArray : [Company]
+    var count : Int {
+        return companyArray.count
+    }
+    
+    init(companyArray: [Company]) {
+        self.companyArray = companyArray
+    }
+    
+    func addCompany(company: Company) {
+        companyArray.append(company)
+    }
+    
 }

@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		535FF27C1DD9226300180BC4 /* FindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535FF27B1DD9226300180BC4 /* FindTableViewController.swift */; };
+		535FF27E1DD9227D00180BC4 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535FF27D1DD9227D00180BC4 /* CompanyTableViewCell.swift */; };
 		9143F74A1DD0F3150030368D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7491DD0F3150030368D /* AppDelegate.swift */; };
 		9143F74C1DD0F3150030368D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F74B1DD0F3150030368D /* HomeViewController.swift */; };
 		9143F74E1DD0F3150030368D /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F74D1DD0F3150030368D /* ContactViewController.swift */; };
 		9143F7511DD0F3150030368D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9143F74F1DD0F3150030368D /* Main.storyboard */; };
 		9143F7531DD0F3150030368D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9143F7521DD0F3150030368D /* Assets.xcassets */; };
 		9143F7561DD0F3150030368D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9143F7541DD0F3150030368D /* LaunchScreen.storyboard */; };
-		9143F75F1DD0F5A70030368D /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F75E1DD0F5A70030368D /* FindViewController.swift */; };
 		9143F7611DD0F5B30030368D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7601DD0F5B30030368D /* MapViewController.swift */; };
 		9143F7631DD0F5BF0030368D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7621DD0F5BF0030368D /* ProfileViewController.swift */; };
 		9143F7681DD0F6700030368D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7671DD0F6700030368D /* Profile.swift */; };
@@ -31,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		1A7B6904835C1839542CFE6C /* Pods-fiNDme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiNDme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiNDme/Pods-fiNDme.debug.xcconfig"; sourceTree = "<group>"; };
+		535FF27B1DD9226300180BC4 /* FindTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindTableViewController.swift; path = ../FindTableViewController.swift; sourceTree = "<group>"; };
+		535FF27D1DD9227D00180BC4 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyTableViewCell.swift; path = ../CompanyTableViewCell.swift; sourceTree = "<group>"; };
 		5DE8CD1C66DF5FDD1F28F55E /* Pods-fiNDme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiNDme.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiNDme/Pods-fiNDme.release.xcconfig"; sourceTree = "<group>"; };
 		5FB4A0BA1A096FA0B84FC809 /* Pods_fiNDme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiNDme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9143F7461DD0F3150030368D /* fiNDme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fiNDme.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +44,6 @@
 		9143F7521DD0F3150030368D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9143F7551DD0F3150030368D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9143F7571DD0F3150030368D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9143F75E1DD0F5A70030368D /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		9143F7601DD0F5B30030368D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9143F7621DD0F5BF0030368D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9143F7671DD0F6700030368D /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -119,12 +121,13 @@
 			children = (
 				9143F74B1DD0F3150030368D /* HomeViewController.swift */,
 				9143F74D1DD0F3150030368D /* ContactViewController.swift */,
-				9143F75E1DD0F5A70030368D /* FindViewController.swift */,
+				535FF27B1DD9226300180BC4 /* FindTableViewController.swift */,
 				9143F7601DD0F5B30030368D /* MapViewController.swift */,
 				9143F7621DD0F5BF0030368D /* ProfileViewController.swift */,
 				9143F7691DD0FA910030368D /* TabBarController.swift */,
 				915CDEE01DD8EA330032817F /* CompanyViewController.swift */,
 				915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */,
+				535FF27D1DD9227D00180BC4 /* CompanyTableViewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535FF27C1DD9226300180BC4 /* FindTableViewController.swift in Sources */,
 				9143F7631DD0F5BF0030368D /* ProfileViewController.swift in Sources */,
 				9143F76C1DD0FB220030368D /* Colors.swift in Sources */,
 				919E96121DD913DD00292231 /* ALSingleLineHeaderView.swift in Sources */,
@@ -298,9 +302,9 @@
 				9143F74A1DD0F3150030368D /* AppDelegate.swift in Sources */,
 				915CDEE31DD8EC480032817F /* Companies.swift in Sources */,
 				9143F7681DD0F6700030368D /* Profile.swift in Sources */,
+				535FF27E1DD9227D00180BC4 /* CompanyTableViewCell.swift in Sources */,
 				9143F74C1DD0F3150030368D /* HomeViewController.swift in Sources */,
 				9143F7611DD0F5B30030368D /* MapViewController.swift in Sources */,
-				9143F75F1DD0F5A70030368D /* FindViewController.swift in Sources */,
 				915CDEE51DD8EC6F0032817F /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
