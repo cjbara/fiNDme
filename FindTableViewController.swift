@@ -11,7 +11,7 @@ import UIKit
 class FindTableViewController: UITableViewController {
 
     var companies = [Company]()
-    var companyList : Companies?
+    var companyList = Companies()
     
     override func viewDidLoad() {
         
@@ -40,10 +40,10 @@ class FindTableViewController: UITableViewController {
         let company3 = Company(name: "PricewaterhouseCoopers", industries: "Accounting, Consulting", about: "Hi",jobs: "Full-Time, Internship", contact: "TBD", logo: #imageLiteral(resourceName: "PwC"))
         let company4 = Company(name: "Ernst & Young", industries: "Accounting", about: "Hi", jobs: "Internship", contact: "TBD", logo: #imageLiteral(resourceName: "EY"))
 
-        companyList?.addCompany(company: company1)
-        companyList?.addCompany(company: company2)
-        companyList?.addCompany(company: company3)
-        companyList?.addCompany(company: company4)
+        companyList.addCompany(company: company1)
+        companyList.addCompany(company: company2)
+        companyList.addCompany(company: company3)
+        companyList.addCompany(company: company4)
         
     
     }
@@ -62,7 +62,7 @@ class FindTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return companyList!.count
+        return companyList.count
     }
 
     
@@ -70,7 +70,7 @@ class FindTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CompanyCell", for: indexPath) as! CompanyTableViewCell
 
         // Configure the cell...
-        let company = (companyList?.companyArray[indexPath.row])! as Company
+        let company = companyList.companyArray[indexPath.row] as Company
         cell.name.text = company.name
         cell.industries.text = company.industries
         cell.logo.image = company.logo
@@ -114,14 +114,21 @@ class FindTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if let vc = segue.destination as? CompanyViewController,
+            let cell = sender as? UITableViewCell,
+            let indexPath = self.tableView.indexPath(for: cell) {
+            
+            vc.company = self.companyList.companyArray[indexPath.row]
+        }
     }
-    */
+ 
 
 }

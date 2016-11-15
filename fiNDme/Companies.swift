@@ -16,6 +16,10 @@ class Companies {
         return companyArray.count
     }
     
+    init() {
+        self.companyArray = []
+    }
+    
     init(companyArray: [Company]) {
         self.companyArray = companyArray
     }
