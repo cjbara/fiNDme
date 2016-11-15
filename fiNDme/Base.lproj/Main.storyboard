@@ -319,13 +319,13 @@
         <!--Root View Controller-->
         <scene sceneID="Byy-eO-7aM">
             <objects>
-                <tableViewController id="EDK-Wt-ffJ" sceneMemberID="viewController">
+                <tableViewController id="EDK-Wt-ffJ" customClass="ContactTableViewController" customModule="fiNDme" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qva-7o-2Yr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="62w-bJ-NLa" detailTextLabel="zn5-be-zsB" style="IBUITableViewCellStyleValue1" id="mHo-5a-gCs">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactCell" textLabel="62w-bJ-NLa" detailTextLabel="zn5-be-zsB" style="IBUITableViewCellStyleValue1" id="mHo-5a-gCs" customClass="ContactTableViewCell" customModule="fiNDme" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mHo-5a-gCs" id="ql3-kq-VHq">
@@ -348,6 +348,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="name" destination="62w-bJ-NLa" id="CwE-I5-h6R"/>
+                                    <outlet property="title" destination="zn5-be-zsB" id="BRq-Fu-N0P"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
