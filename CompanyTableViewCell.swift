@@ -13,8 +13,7 @@ class CompanyTableViewCell: UITableViewCell {
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var industries: UILabel!
-    
-    
+    @IBOutlet weak var favorite: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,4 +26,12 @@ class CompanyTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    var companyCell : Company! {
+        didSet {
+            name.text = companyCell.name
+            industries.text = companyCell.industries
+            logo.image = companyCell.image
+            
+        }
+    }
 }

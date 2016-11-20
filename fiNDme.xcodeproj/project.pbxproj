@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		535FF27C1DD9226300180BC4 /* FindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535FF27B1DD9226300180BC4 /* FindTableViewController.swift */; };
 		535FF27E1DD9227D00180BC4 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535FF27D1DD9227D00180BC4 /* CompanyTableViewCell.swift */; };
+		53CD9FA61DE2424F00D2BFD3 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FA51DE2424F00D2BFD3 /* MatchViewController.swift */; };
+		53CD9FA81DE2427300D2BFD3 /* MatchSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FA71DE2427300D2BFD3 /* MatchSwipeViewController.swift */; };
+		53CD9FB31DE2471900D2BFD3 /* DeloitteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FB21DE2471900D2BFD3 /* DeloitteViewController.swift */; };
+		53CD9FB51DE2472400D2BFD3 /* EYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FB41DE2472400D2BFD3 /* EYViewController.swift */; };
+		53CD9FB71DE2472D00D2BFD3 /* PWCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FB61DE2472D00D2BFD3 /* PWCViewController.swift */; };
+		53CD9FB91DE2473700D2BFD3 /* KPMGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FB81DE2473700D2BFD3 /* KPMGViewController.swift */; };
+		53CD9FBB1DE24A9A00D2BFD3 /* DeloitteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53CD9FBA1DE24A9A00D2BFD3 /* DeloitteViewController.xib */; };
+		53CD9FBD1DE24AAC00D2BFD3 /* EYViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53CD9FBC1DE24AAC00D2BFD3 /* EYViewController.xib */; };
+		53CD9FBF1DE24AB500D2BFD3 /* PWCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53CD9FBE1DE24AB500D2BFD3 /* PWCViewController.xib */; };
+		53CD9FC11DE24AC000D2BFD3 /* KPMGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53CD9FC01DE24AC000D2BFD3 /* KPMGViewController.xib */; };
 		9143F74A1DD0F3150030368D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7491DD0F3150030368D /* AppDelegate.swift */; };
 		9143F74C1DD0F3150030368D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F74B1DD0F3150030368D /* HomeViewController.swift */; };
 		9143F74E1DD0F3150030368D /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F74D1DD0F3150030368D /* ContactViewController.swift */; };
@@ -37,6 +47,16 @@
 		1A7B6904835C1839542CFE6C /* Pods-fiNDme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiNDme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiNDme/Pods-fiNDme.debug.xcconfig"; sourceTree = "<group>"; };
 		535FF27B1DD9226300180BC4 /* FindTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindTableViewController.swift; path = ../FindTableViewController.swift; sourceTree = "<group>"; };
 		535FF27D1DD9227D00180BC4 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyTableViewCell.swift; path = ../CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		53CD9FA51DE2424F00D2BFD3 /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
+		53CD9FA71DE2427300D2BFD3 /* MatchSwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchSwipeViewController.swift; sourceTree = "<group>"; };
+		53CD9FB21DE2471900D2BFD3 /* DeloitteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeloitteViewController.swift; sourceTree = "<group>"; };
+		53CD9FB41DE2472400D2BFD3 /* EYViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYViewController.swift; sourceTree = "<group>"; };
+		53CD9FB61DE2472D00D2BFD3 /* PWCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWCViewController.swift; sourceTree = "<group>"; };
+		53CD9FB81DE2473700D2BFD3 /* KPMGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPMGViewController.swift; sourceTree = "<group>"; };
+		53CD9FBA1DE24A9A00D2BFD3 /* DeloitteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeloitteViewController.xib; sourceTree = "<group>"; };
+		53CD9FBC1DE24AAC00D2BFD3 /* EYViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYViewController.xib; sourceTree = "<group>"; };
+		53CD9FBE1DE24AB500D2BFD3 /* PWCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PWCViewController.xib; sourceTree = "<group>"; };
+		53CD9FC01DE24AC000D2BFD3 /* KPMGViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPMGViewController.xib; sourceTree = "<group>"; };
 		5DE8CD1C66DF5FDD1F28F55E /* Pods-fiNDme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiNDme.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiNDme/Pods-fiNDme.release.xcconfig"; sourceTree = "<group>"; };
 		5FB4A0BA1A096FA0B84FC809 /* Pods_fiNDme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiNDme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9143F7461DD0F3150030368D /* fiNDme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fiNDme.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +113,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		53CD9FA41DE23BB200D2BFD3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				535FF27D1DD9227D00180BC4 /* CompanyTableViewCell.swift */,
+				919E961B1DDAF34B00292231 /* ContactTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		53CD9FAB1DE2464A00D2BFD3 /* Match Views */ = {
+			isa = PBXGroup;
+			children = (
+				53CD9FB21DE2471900D2BFD3 /* DeloitteViewController.swift */,
+				53CD9FB41DE2472400D2BFD3 /* EYViewController.swift */,
+				53CD9FB61DE2472D00D2BFD3 /* PWCViewController.swift */,
+				53CD9FB81DE2473700D2BFD3 /* KPMGViewController.swift */,
+				53CD9FBA1DE24A9A00D2BFD3 /* DeloitteViewController.xib */,
+				53CD9FBC1DE24AAC00D2BFD3 /* EYViewController.xib */,
+				53CD9FBE1DE24AB500D2BFD3 /* PWCViewController.xib */,
+				53CD9FC01DE24AC000D2BFD3 /* KPMGViewController.xib */,
+			);
+			name = "Match Views";
+			sourceTree = "<group>";
+		};
 		9143F73D1DD0F3150030368D = {
 			isa = PBXGroup;
 			children = (
@@ -133,9 +177,10 @@
 				9143F7691DD0FA910030368D /* TabBarController.swift */,
 				915CDEE01DD8EA330032817F /* CompanyViewController.swift */,
 				915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */,
-				535FF27D1DD9227D00180BC4 /* CompanyTableViewCell.swift */,
-				919E961B1DDAF34B00292231 /* ContactTableViewCell.swift */,
 				919E961D1DDAF3A700292231 /* ContactTableViewController.swift */,
+				53CD9FA51DE2424F00D2BFD3 /* MatchViewController.swift */,
+				53CD9FA71DE2427300D2BFD3 /* MatchSwipeViewController.swift */,
+				53CD9FA41DE23BB200D2BFD3 /* Cells */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -144,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				9143F74F1DD0F3150030368D /* Main.storyboard */,
+				53CD9FAB1DE2464A00D2BFD3 /* Match Views */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -237,9 +283,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53CD9FC11DE24AC000D2BFD3 /* KPMGViewController.xib in Resources */,
+				53CD9FBB1DE24A9A00D2BFD3 /* DeloitteViewController.xib in Resources */,
 				9143F7561DD0F3150030368D /* LaunchScreen.storyboard in Resources */,
 				9143F7531DD0F3150030368D /* Assets.xcassets in Resources */,
+				53CD9FBF1DE24AB500D2BFD3 /* PWCViewController.xib in Resources */,
 				9143F7511DD0F3150030368D /* Main.storyboard in Resources */,
+				53CD9FBD1DE24AAC00D2BFD3 /* EYViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,16 +357,22 @@
 				915CDEE71DD8ECD50032817F /* Favorite.swift in Sources */,
 				919E961C1DDAF34B00292231 /* ContactTableViewCell.swift in Sources */,
 				9143F76A1DD0FA910030368D /* TabBarController.swift in Sources */,
+				53CD9FB31DE2471900D2BFD3 /* DeloitteViewController.swift in Sources */,
+				53CD9FA61DE2424F00D2BFD3 /* MatchViewController.swift in Sources */,
 				915CDEE91DD8FEF00032817F /* AccoridionViewController.swift in Sources */,
+				53CD9FA81DE2427300D2BFD3 /* MatchSwipeViewController.swift in Sources */,
 				9143F74E1DD0F3150030368D /* ContactViewController.swift in Sources */,
 				915CDEE11DD8EA330032817F /* CompanyViewController.swift in Sources */,
 				919E96201DDAF42400292231 /* Contact.swift in Sources */,
 				9143F74A1DD0F3150030368D /* AppDelegate.swift in Sources */,
+				53CD9FB91DE2473700D2BFD3 /* KPMGViewController.swift in Sources */,
+				53CD9FB71DE2472D00D2BFD3 /* PWCViewController.swift in Sources */,
 				915CDEE31DD8EC480032817F /* Companies.swift in Sources */,
 				9143F7681DD0F6700030368D /* Profile.swift in Sources */,
 				535FF27E1DD9227D00180BC4 /* CompanyTableViewCell.swift in Sources */,
 				9143F74C1DD0F3150030368D /* HomeViewController.swift in Sources */,
 				9143F7611DD0F5B30030368D /* MapViewController.swift in Sources */,
+				53CD9FB51DE2472400D2BFD3 /* EYViewController.swift in Sources */,
 				915CDEE51DD8EC6F0032817F /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

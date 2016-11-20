@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KPMGViewController" customModule="fiNDme" customModuleProvider="target">
+            <connections>
+                <outlet property="companyImage" destination="C06-RH-lbm" id="QNd-5d-Sr9"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ryp-gH-YGC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KPMG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obN-dY-G3r">
+                    <rect key="frame" x="120.5" y="120" width="134.5" height="52.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="44"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C06-RH-lbm">
+                    <rect key="frame" x="62" y="208" width="250" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="7Fq-hw-IDt"/>
+                        <constraint firstAttribute="height" constant="250" id="es0-hs-oO4"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="C06-RH-lbm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2oJ-Jb-HJz"/>
+                <constraint firstItem="obN-dY-G3r" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BeC-F5-hMI"/>
+                <constraint firstItem="obN-dY-G3r" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="Scr-vi-c3d"/>
+                <constraint firstItem="C06-RH-lbm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="g1L-dM-NMU"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
