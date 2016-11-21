@@ -10,11 +10,15 @@ import UIKit
 
 class ContactViewController: UIViewController {
 
+    @IBOutlet weak var exchange: UIButton!
+    @IBOutlet weak var myContacts: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        exchange.layer.cornerRadius = 4
+        myContacts.layer.cornerRadius = 4
         
     }
 

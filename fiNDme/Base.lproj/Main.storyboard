@@ -74,23 +74,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oek-nX-pwt">
-                                <rect key="frame" x="-4" y="64" width="383" height="300"/>
+                                <rect key="frame" x="76" y="179" width="223" height="70"/>
                                 <color key="backgroundColor" red="0.41836852076717546" green="0.57662298792637601" blue="0.87750971502590669" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="y1z-Hw-ZrF"/>
+                                    <constraint firstAttribute="height" constant="70" id="y1z-Hw-ZrF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                 <state key="normal" title="Exchange Contact"/>
                                 <connections>
                                     <segue destination="mLr-YO-mHf" kind="show" id="drI-g7-9ba"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCb-2g-Zb7">
-                                <rect key="frame" x="-4" y="362" width="383" height="300"/>
+                                <rect key="frame" x="71" y="437" width="233" height="70"/>
                                 <color key="backgroundColor" red="0.032634186669020245" green="0.87750971502590669" blue="0.32107468491052421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="383" id="20B-ta-Mm2"/>
-                                    <constraint firstAttribute="height" constant="300" id="cFQ-2g-tXA"/>
+                                    <constraint firstAttribute="width" constant="233" id="20B-ta-Mm2"/>
+                                    <constraint firstAttribute="height" constant="70" id="cFQ-2g-tXA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="My Contacts"/>
@@ -101,18 +101,23 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="oek-nX-pwt" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-20" id="R2e-u2-xvy"/>
-                            <constraint firstItem="bCb-2g-Zb7" firstAttribute="top" secondItem="oek-nX-pwt" secondAttribute="bottom" constant="-2" id="chk-V4-jyv"/>
-                            <constraint firstItem="oek-nX-pwt" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="gfA-lM-bSn"/>
+                            <constraint firstItem="oek-nX-pwt" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="60" id="R2e-u2-xvy"/>
+                            <constraint firstItem="bCb-2g-Zb7" firstAttribute="top" secondItem="oek-nX-pwt" secondAttribute="bottom" constant="188" id="chk-V4-jyv"/>
+                            <constraint firstItem="oek-nX-pwt" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="115" id="gfA-lM-bSn"/>
                             <constraint firstItem="oek-nX-pwt" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="lSv-k2-uBS"/>
                             <constraint firstItem="bCb-2g-Zb7" firstAttribute="centerX" secondItem="oek-nX-pwt" secondAttribute="centerX" id="sNN-cX-1U5"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="bCb-2g-Zb7" secondAttribute="bottom" constant="111" id="yQT-7b-CiL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Contact" id="WE6-5b-1k8"/>
+                    <connections>
+                        <outlet property="exchange" destination="oek-nX-pwt" id="caT-bH-6nu"/>
+                        <outlet property="myContacts" destination="bCb-2g-Zb7" id="Sa0-Hm-OK3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="428"/>
+            <point key="canvasLocation" x="621.60000000000002" y="427.73613193403304"/>
         </scene>
         <!--Company View Controller-->
         <scene sceneID="jzf-Sf-TrT">
