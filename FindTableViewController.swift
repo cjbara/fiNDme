@@ -36,7 +36,7 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
         searchController.dimsBackgroundDuringPresentation = false
         tableView.tableHeaderView = searchController.searchBar
         
-        searchController.searchBar.scopeButtonTitles = ["All", "Full-Time", "Internship"]
+        searchController.searchBar.scopeButtonTitles = ["All", "Full-time", "Internship"]
         searchController.searchBar.delegate = self
         
         companyList = Companies(companyArray: companies)
@@ -45,7 +45,20 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
     }
     
     func loadCompanies() {
-
+        
+        let names = ["Deloitte","KPMG","PricewaterhouseCoopers","Ernst & Young","Accenture"]
+        let industries = ["Accounting, Consulting", "Accounting, Tax, Audit", "Accounting, Consulting", "Accounting", "Consulting"]
+        let about = ["","","","",""]
+        let jobs = ["Full-time, Internship", "Full-time", "Full-time, Internship","Internship","Full-time"]
+        let contacts = ["","","","",""]
+        let logos = [#imageLiteral(resourceName: "Deloitte"),#imageLiteral(resourceName: "KPMG"),#imageLiteral(resourceName: "PwC"),#imageLiteral(resourceName: "EY"),#imageLiteral(resourceName: "emptyLogo")]
+        
+        //for name in names {
+        for i in 0 ..< names.count {
+            let companyToAdd = Company(name: names[i], industries: industries[i], about: about[i], jobs: jobs[i], contact: contacts[i], logo: logos[i])
+            companyList.addCompany(company: companyToAdd)
+        }
+        /*
         let company1 = Company(name: "Deloitte", industries: "Accounting, Consulting", about: "Hi", jobs: "Full-Time, Internship", contact: "TBD", logo: #imageLiteral(resourceName: "Deloitte"))
         let company2 = Company(name: "KPMG", industries: "Accounting, Tax, Audit", about: "Hi",jobs: "Full-Time", contact: "TBD", logo: #imageLiteral(resourceName: "KPMG"))
         let company3 = Company(name: "PricewaterhouseCoopers", industries: "Accounting, Consulting", about: "Hi",jobs: "Full-Time, Internship", contact: "TBD", logo: #imageLiteral(resourceName: "PwC"))
@@ -55,7 +68,7 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
         companyList.addCompany(company: company2)
         companyList.addCompany(company: company3)
         companyList.addCompany(company: company4)
-        
+        */
     
     }
     
