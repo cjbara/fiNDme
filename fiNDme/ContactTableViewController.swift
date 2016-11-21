@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Foundation
+import MessageUI
 
-class ContactTableViewController: UITableViewController {
-
+class ContactTableViewController: UITableViewController, ButtonCellDelegate, MFMailComposeViewControllerDelegate {
+    
     var contacts: [Contact] = []
     
     override func viewDidLoad() {
@@ -27,7 +29,28 @@ class ContactTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+    
+    func configuredMailComposeViewController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
+        
+        mailComposerVC.setToRecipients(["someone@somewhere.com"])
+        mailComposerVC.setSubject("Sending you an in-app e-mail...")
+        mailComposerVC.setMessageBody("Sending e-mail in-app is not so bad!", isHTML: false)
+        
+        return mailComposerVC
+    }
+    
+    func showSendMailErrorAlert() {
+        let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
+        sendMailErrorAlert.show()
+    }
+    
+    // MARK: MFMailComposeViewControllerDelegate Method
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -50,11 +73,32 @@ class ContactTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as! ContactTableViewCell
 
         cell.name.text = contacts[indexPath.row].name
-        cell.title.text = "\(contacts[indexPath.row].company) \(contacts[indexPath.row].title)"
-
+        cell.detail.text = "\(contacts[indexPath.row].company) \(contacts[indexPath.row].title)"
+        if cell.buttonDelegate == nil {
+            cell.buttonDelegate = self
+        }
+        /*
+        cell.message.tag = indexPath.row
+        cell.message.addTarget(self, action: "buttonClicked", for: UIControlEvents.touchUpInside)
+        */
         return cell
     }
     
+    func cellTapped(cell: ContactTableViewCell) {
+        let mailComposeViewController = configuredMailComposeViewController()
+        if MFMailComposeViewController.canSendMail() {
+            self.present(mailComposeViewController, animated: true, completion: nil)
+        } else {
+            self.showSendMailErrorAlert()
+        }
+    }
+    
+    /*
+    func buttonClicked(sender:UIButton) {
+        let buttonRow = sender.tag
+        print(buttonRow)
+    }
+    */
 
     /*
     // Override to support conditional editing of the table view.

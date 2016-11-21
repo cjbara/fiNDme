@@ -16,9 +16,12 @@ class ProfileTableViewController: UITableViewController, UIPickerViewDataSource,
     @IBOutlet weak var interests: UITextField!
 
     @IBOutlet weak var major: UIPickerView!
+    @IBOutlet weak var job: UIPickerView!
     
     var pickerDataSource = ["Finance", "Marketing", "Accounting", "ITM"]
     var majorChosen : String = ""
+    var pickerDataSource2 = ["Full-time","Internship"]
+    var jobChosen : String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +32,11 @@ class ProfileTableViewController: UITableViewController, UIPickerViewDataSource,
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        self.major.dataSource = self;
-        self.major.delegate = self;
+        self.major.dataSource = self
+        self.major.delegate = self
+        
+        self.job.dataSource = self
+        self.job.delegate = self
 
     }
     
@@ -39,13 +45,22 @@ class ProfileTableViewController: UITableViewController, UIPickerViewDataSource,
         return 1
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerDataSource.count
+        if pickerView == major {
+            return pickerDataSource.count
+        } else if pickerView == job {
+            return pickerDataSource2.count
+        }
+        return 0
     }
     
     //MARK: Delegates
-    func
-        pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerDataSource[row]
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if pickerView == major {
+            return pickerDataSource[row]
+        } else if pickerView == job {
+            return pickerDataSource2[row]
+        }
+        return ""
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {

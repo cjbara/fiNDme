@@ -8,11 +8,17 @@
 
 import UIKit
 
+protocol ButtonCellDelegate {
+    func cellTapped(cell: ContactTableViewCell)
+}
+
 class ContactTableViewCell: UITableViewCell {
     
+    var buttonDelegate : ButtonCellDelegate?
     
-    @IBOutlet var name: UILabel!
-    @IBOutlet var title: UILabel!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var detail: UILabel!
+    @IBOutlet weak var message: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,5 +30,12 @@ class ContactTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    @IBAction func buttonTap(_ sender: Any) {
+        if let delegate = buttonDelegate {
+            delegate.cellTapped(cell: self)
+        }
+    }
+    
 
 }
