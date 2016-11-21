@@ -689,6 +689,7 @@
                                             </constraints>
                                             <connections>
                                                 <action selector="changeFavorite:" destination="fnw-3R-ddB" eventType="touchUpInside" id="bU7-02-VLu"/>
+                                                <action selector="starTap:" destination="obd-I8-kC3" eventType="touchUpInside" id="Jnh-Vh-bkH"/>
                                             </connections>
                                         </button>
                                     </subviews>

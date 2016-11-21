@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FindTableViewController: UITableViewController {
+class FindTableViewController: UITableViewController, StarCellDelegate {
 
     var companies = [Company]()
     var companyList = Companies()
@@ -106,29 +106,29 @@ class FindTableViewController: UITableViewController {
             cell.industries.text = company.industries
             cell.logo.image = company.logo
             cell.favorite.setImage(company.favorite.image, for: UIControlState.normal)
+            //cell.logo.image = company.image
+            
+            cell.logo.layer.cornerRadius = cell.logo.frame.size.width / 2;
+            cell.logo.clipsToBounds = true;
+            
+            cell.logo.layer.borderWidth = 3.0;
+            cell.logo.layer.borderColor = UIColor.black.cgColor
         }
         
-        //cell.companyCell = c
-        
+        if cell.starDelegate == nil {
+            cell.starDelegate = self
+        }
         return cell
-/*
-        let company = companyList.companyArray[indexPath.row] as Company
-        cell.name.text = company.name
-        cell.industries.text = company.industries
-        cell.logo.image = company.logo
 
-        cell.favorite.setImage(company.favorite.image, for: UIControlState.normal)
-*/
-        //companyImage.image = company.image
+    }
+    
+    func starTapped(cell: CompanyTableViewCell) {
         
-        //self.companyImage.layer.cornerRadius = self.companyImage.frame.size.width / 2;
-        //self.companyImage.clipsToBounds = true;
-        
-        //self.companyImage.layer.borderWidth = 3.0;
-        //self.companyImage.layer.borderColor = UIColor.black.cgColor
-        
-        
-        //return cell
+        if cell.favorite.imageView?.image == #imageLiteral(resourceName: "empty-star") {
+            cell.favorite.setImage(#imageLiteral(resourceName: "star"), for: .normal)
+        } else {
+            cell.favorite.setImage(#imageLiteral(resourceName: "empty-star"), for: .normal)
+        }
     }
 
     /*

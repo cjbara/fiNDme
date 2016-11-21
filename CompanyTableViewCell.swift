@@ -8,12 +8,18 @@
 
 import UIKit
 
+protocol StarCellDelegate {
+    func starTapped(cell: CompanyTableViewCell)
+}
+
 class CompanyTableViewCell: UITableViewCell {
 
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var industries: UILabel!
     @IBOutlet weak var favorite: UIButton!
+    
+    var starDelegate : StarCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,4 +40,11 @@ class CompanyTableViewCell: UITableViewCell {
             
         }
     }
+    
+    @IBAction func starTap(_ sender: Any) {
+        if let delegate = starDelegate {
+            delegate.starTapped(cell: self)
+        }
+    }
+    
 }
