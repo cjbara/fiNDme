@@ -19,6 +19,7 @@
 		53CD9FBD1DE24AAC00D2BFD3 /* EYViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53CD9FBC1DE24AAC00D2BFD3 /* EYViewController.xib */; };
 		53CD9FBF1DE24AB500D2BFD3 /* PWCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53CD9FBE1DE24AB500D2BFD3 /* PWCViewController.xib */; };
 		53CD9FC11DE24AC000D2BFD3 /* KPMGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53CD9FC01DE24AC000D2BFD3 /* KPMGViewController.xib */; };
+		53CD9FC31DE2AED900D2BFD3 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FC21DE2AED900D2BFD3 /* ProfileTableViewController.swift */; };
 		9143F74A1DD0F3150030368D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7491DD0F3150030368D /* AppDelegate.swift */; };
 		9143F74C1DD0F3150030368D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F74B1DD0F3150030368D /* HomeViewController.swift */; };
 		9143F74E1DD0F3150030368D /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F74D1DD0F3150030368D /* ContactViewController.swift */; };
@@ -26,7 +27,6 @@
 		9143F7531DD0F3150030368D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9143F7521DD0F3150030368D /* Assets.xcassets */; };
 		9143F7561DD0F3150030368D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9143F7541DD0F3150030368D /* LaunchScreen.storyboard */; };
 		9143F7611DD0F5B30030368D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7601DD0F5B30030368D /* MapViewController.swift */; };
-		9143F7631DD0F5BF0030368D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7621DD0F5BF0030368D /* ProfileViewController.swift */; };
 		9143F7681DD0F6700030368D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7671DD0F6700030368D /* Profile.swift */; };
 		9143F76A1DD0FA910030368D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7691DD0FA910030368D /* TabBarController.swift */; };
 		9143F76C1DD0FB220030368D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F76B1DD0FB220030368D /* Colors.swift */; };
@@ -57,6 +57,7 @@
 		53CD9FBC1DE24AAC00D2BFD3 /* EYViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYViewController.xib; sourceTree = "<group>"; };
 		53CD9FBE1DE24AB500D2BFD3 /* PWCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PWCViewController.xib; sourceTree = "<group>"; };
 		53CD9FC01DE24AC000D2BFD3 /* KPMGViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPMGViewController.xib; sourceTree = "<group>"; };
+		53CD9FC21DE2AED900D2BFD3 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		5DE8CD1C66DF5FDD1F28F55E /* Pods-fiNDme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiNDme.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiNDme/Pods-fiNDme.release.xcconfig"; sourceTree = "<group>"; };
 		5FB4A0BA1A096FA0B84FC809 /* Pods_fiNDme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiNDme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9143F7461DD0F3150030368D /* fiNDme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fiNDme.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +69,6 @@
 		9143F7551DD0F3150030368D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9143F7571DD0F3150030368D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9143F7601DD0F5B30030368D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		9143F7621DD0F5BF0030368D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9143F7671DD0F6700030368D /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		9143F7691DD0FA910030368D /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9143F76B1DD0FB220030368D /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -173,13 +173,13 @@
 				9143F74D1DD0F3150030368D /* ContactViewController.swift */,
 				535FF27B1DD9226300180BC4 /* FindTableViewController.swift */,
 				9143F7601DD0F5B30030368D /* MapViewController.swift */,
-				9143F7621DD0F5BF0030368D /* ProfileViewController.swift */,
 				9143F7691DD0FA910030368D /* TabBarController.swift */,
 				915CDEE01DD8EA330032817F /* CompanyViewController.swift */,
 				915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */,
 				919E961D1DDAF3A700292231 /* ContactTableViewController.swift */,
 				53CD9FA51DE2424F00D2BFD3 /* MatchViewController.swift */,
 				53CD9FA71DE2427300D2BFD3 /* MatchSwipeViewController.swift */,
+				53CD9FC21DE2AED900D2BFD3 /* ProfileTableViewController.swift */,
 				53CD9FA41DE23BB200D2BFD3 /* Cells */,
 			);
 			name = ViewControllers;
@@ -350,13 +350,13 @@
 			files = (
 				919E961E1DDAF3A700292231 /* ContactTableViewController.swift in Sources */,
 				535FF27C1DD9226300180BC4 /* FindTableViewController.swift in Sources */,
-				9143F7631DD0F5BF0030368D /* ProfileViewController.swift in Sources */,
 				9143F76C1DD0FB220030368D /* Colors.swift in Sources */,
 				919E96121DD913DD00292231 /* ALSingleLineHeaderView.swift in Sources */,
 				919E960F1DD913B500292231 /* ALSeparatorView.swift in Sources */,
 				915CDEE71DD8ECD50032817F /* Favorite.swift in Sources */,
 				919E961C1DDAF34B00292231 /* ContactTableViewCell.swift in Sources */,
 				9143F76A1DD0FA910030368D /* TabBarController.swift in Sources */,
+				53CD9FC31DE2AED900D2BFD3 /* ProfileTableViewController.swift in Sources */,
 				53CD9FB31DE2471900D2BFD3 /* DeloitteViewController.swift in Sources */,
 				53CD9FA61DE2424F00D2BFD3 /* MatchViewController.swift in Sources */,
 				915CDEE91DD8FEF00032817F /* AccoridionViewController.swift in Sources */,
