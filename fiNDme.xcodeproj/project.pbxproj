@@ -20,6 +20,7 @@
 		53CD9FBF1DE24AB500D2BFD3 /* PWCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53CD9FBE1DE24AB500D2BFD3 /* PWCViewController.xib */; };
 		53CD9FC11DE24AC000D2BFD3 /* KPMGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53CD9FC01DE24AC000D2BFD3 /* KPMGViewController.xib */; };
 		53CD9FC31DE2AED900D2BFD3 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FC21DE2AED900D2BFD3 /* ProfileTableViewController.swift */; };
+		53CD9FC51DE3AF8C00D2BFD3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FC41DE3AF8C00D2BFD3 /* SearchViewController.swift */; };
 		9143F74A1DD0F3150030368D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F7491DD0F3150030368D /* AppDelegate.swift */; };
 		9143F74C1DD0F3150030368D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F74B1DD0F3150030368D /* HomeViewController.swift */; };
 		9143F74E1DD0F3150030368D /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143F74D1DD0F3150030368D /* ContactViewController.swift */; };
@@ -58,6 +59,7 @@
 		53CD9FBE1DE24AB500D2BFD3 /* PWCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PWCViewController.xib; sourceTree = "<group>"; };
 		53CD9FC01DE24AC000D2BFD3 /* KPMGViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPMGViewController.xib; sourceTree = "<group>"; };
 		53CD9FC21DE2AED900D2BFD3 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		53CD9FC41DE3AF8C00D2BFD3 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		5DE8CD1C66DF5FDD1F28F55E /* Pods-fiNDme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiNDme.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiNDme/Pods-fiNDme.release.xcconfig"; sourceTree = "<group>"; };
 		5FB4A0BA1A096FA0B84FC809 /* Pods_fiNDme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiNDme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9143F7461DD0F3150030368D /* fiNDme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fiNDme.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +182,7 @@
 				53CD9FA51DE2424F00D2BFD3 /* MatchViewController.swift */,
 				53CD9FA71DE2427300D2BFD3 /* MatchSwipeViewController.swift */,
 				53CD9FC21DE2AED900D2BFD3 /* ProfileTableViewController.swift */,
+				53CD9FC41DE3AF8C00D2BFD3 /* SearchViewController.swift */,
 				53CD9FA41DE23BB200D2BFD3 /* Cells */,
 			);
 			name = ViewControllers;
@@ -351,6 +354,7 @@
 				919E961E1DDAF3A700292231 /* ContactTableViewController.swift in Sources */,
 				535FF27C1DD9226300180BC4 /* FindTableViewController.swift in Sources */,
 				9143F76C1DD0FB220030368D /* Colors.swift in Sources */,
+				53CD9FC51DE3AF8C00D2BFD3 /* SearchViewController.swift in Sources */,
 				919E96121DD913DD00292231 /* ALSingleLineHeaderView.swift in Sources */,
 				919E960F1DD913B500292231 /* ALSeparatorView.swift in Sources */,
 				915CDEE71DD8ECD50032817F /* Favorite.swift in Sources */,
