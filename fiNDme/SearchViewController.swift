@@ -24,7 +24,7 @@ class SearchViewController: UIViewController {
         return firstChildTabVC
     }()
     lazy var secondChildTabVC : UIViewController? = {
-        let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "MatchViewControllerId")
+        let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "Match2ViewControllerId")
         return secondChildTabVC
     }()
     

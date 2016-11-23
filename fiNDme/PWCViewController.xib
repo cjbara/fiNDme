@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PWCViewController" customModule="fiNDme" customModuleProvider="target">
             <connections>
                 <outlet property="companyImage" destination="rK2-df-Kro" id="EvA-sY-CUz"/>
+                <outlet property="favoriteButton" destination="cXC-Mf-IX3" id="1ED-VF-qhj"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Emw-69-Ink"/>
             </connections>
         </placeholder>
@@ -20,34 +21,39 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pricewaterhouse" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNe-Yx-Igg">
-                    <rect key="frame" x="10" y="100" width="355.5" height="52.5"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="44"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coopers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuX-rl-g8G">
-                    <rect key="frame" x="98" y="153.5" width="179.5" height="52.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PwC" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNe-Yx-Igg">
+                    <rect key="frame" x="138.5" y="40" width="98" height="52.5"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="44"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rK2-df-Kro">
-                    <rect key="frame" x="62" y="208" width="250" height="250"/>
+                    <rect key="frame" x="62" y="132.5" width="250" height="250"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="250" id="3NP-Gn-mU9"/>
                         <constraint firstAttribute="width" constant="250" id="O3N-Gr-ibL"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXC-Mf-IX3">
+                    <rect key="frame" x="150" y="422.5" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="9OF-Af-cOJ"/>
+                        <constraint firstAttribute="height" constant="75" id="V8I-lD-JYq"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="favoriteAction:" destination="-1" eventType="touchUpInside" id="edE-We-Oyw"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="JNe-Yx-Igg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="2Rz-7M-hIM"/>
+                <constraint firstItem="JNe-Yx-Igg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="2Rz-7M-hIM"/>
                 <constraint firstItem="rK2-df-Kro" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5hh-4Z-WP6"/>
-                <constraint firstItem="rK2-df-Kro" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="B3j-Pt-n9r"/>
                 <constraint firstItem="JNe-Yx-Igg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SIm-Hg-yR2"/>
-                <constraint firstItem="ZuX-rl-g8G" firstAttribute="top" secondItem="JNe-Yx-Igg" secondAttribute="bottom" constant="1" id="bPa-ut-1pz"/>
-                <constraint firstItem="ZuX-rl-g8G" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eAA-FU-mmc"/>
+                <constraint firstItem="cXC-Mf-IX3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oxf-d7-uh4"/>
+                <constraint firstItem="rK2-df-Kro" firstAttribute="top" secondItem="JNe-Yx-Igg" secondAttribute="bottom" constant="40" id="tcx-BI-29q"/>
+                <constraint firstItem="cXC-Mf-IX3" firstAttribute="top" secondItem="rK2-df-Kro" secondAttribute="bottom" constant="40" id="xMr-nK-E8F"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="72.5"/>
         </view>

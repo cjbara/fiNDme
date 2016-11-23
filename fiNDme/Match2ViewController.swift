@@ -1,42 +1,40 @@
 //
-//  MatchSwipeViewController.swift
+//  Match2ViewController.swift
 //  fiNDme
 //
-//  Created by Jose Alberto Suarez on 11/20/16.
+//  Created by Jose Alberto Suarez on 11/22/16.
 //  Copyright © 2016 coryjbara. All rights reserved.
 //
 
 import UIKit
 
-class MatchSwipeViewController: UIViewController {
+class Match2ViewController: UIViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
-
+    @IBOutlet weak var swipeView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         let deloitteVC : DeloitteViewController = DeloitteViewController(nibName: "DeloitteViewController", bundle: nil)
         let eyVC : EYViewController = EYViewController(nibName: "EYViewController", bundle: nil)
         let pwcVC : PWCViewController = PWCViewController(nibName: "PWCViewController", bundle: nil)
         let kpmgVC : KPMGViewController = KPMGViewController(nibName: "KPMGViewController", bundle: nil)
         
         self.addChildViewController(kpmgVC)
-        self.scrollView!.addSubview(kpmgVC.view);
+        swipeView.addSubview(kpmgVC.view);
         kpmgVC.didMove(toParentViewController: self)
         
         self.addChildViewController(pwcVC)
-        self.scrollView!.addSubview(pwcVC.view);
+        swipeView.addSubview(pwcVC.view);
         pwcVC.didMove(toParentViewController: self)
         
         self.addChildViewController(eyVC)
-        self.scrollView!.addSubview(eyVC.view);
+        swipeView.addSubview(eyVC.view);
         eyVC.didMove(toParentViewController: self)
         
         self.addChildViewController(deloitteVC)
-        self.scrollView!.addSubview(deloitteVC.view);
+        swipeView.addSubview(deloitteVC.view);
         deloitteVC.didMove(toParentViewController: self)
         
         var adminFrame : CGRect = deloitteVC.view.frame
@@ -53,9 +51,9 @@ class MatchSwipeViewController: UIViewController {
         
         let scrollWidth : CGFloat = 4 * self.view.frame.width
         //let scrollHeigth : CGFloat = self.view.frame.size.height
-        let scrollHeigth : CGFloat = 450
-        self.scrollView!.contentSize = CGSize(width: scrollWidth, height: scrollHeigth)
-        
+        //let scrollHeigth : CGFloat = 639
+        swipeView.contentSize = CGSize(width: scrollWidth, height: 1.0)
+
     }
 
     override func didReceiveMemoryWarning() {

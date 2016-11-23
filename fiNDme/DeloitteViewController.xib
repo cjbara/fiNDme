@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeloitteViewController" customModule="fiNDme" customModuleProvider="target">
             <connections>
                 <outlet property="companyImage" destination="1S4-MT-XCh" id="ytp-1x-MUu"/>
+                <outlet property="favoriteButton" destination="bF1-Cd-LQK" id="KHY-CH-uc7"/>
                 <outlet property="view" destination="iN0-l3-epB" id="vlm-NG-e1B"/>
             </connections>
         </placeholder>
@@ -20,28 +21,50 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1S4-MT-XCh">
-                    <rect key="frame" x="62" y="208" width="250" height="250"/>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1S4-MT-XCh">
+                    <rect key="frame" x="62" y="132.5" width="250" height="250"/>
+                    <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="width" constant="250" id="OCZ-7t-Bng"/>
                         <constraint firstAttribute="height" constant="250" id="Wt4-My-QiM"/>
                     </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="nW0-ap-931" appends="YES" id="VGP-X3-bUH"/>
+                    </connections>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Deloitte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUy-IB-Fh9">
-                    <rect key="frame" x="94" y="120" width="187" height="58"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="48"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Deloitte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yJ-5L-5Vq">
+                    <rect key="frame" x="104" y="60" width="166" height="52.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="44"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bF1-Cd-LQK">
+                    <rect key="frame" x="150" y="422.5" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="Hew-gq-EiS"/>
+                        <constraint firstAttribute="width" constant="75" id="I00-t2-Hj3"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="favoriteAction:" destination="-1" eventType="touchUpInside" id="NSz-1n-xDf"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="gUy-IB-Fh9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="EQm-eb-syG"/>
-                <constraint firstItem="1S4-MT-XCh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Pgo-O9-Omg"/>
-                <constraint firstItem="gUy-IB-Fh9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WGq-d4-B22"/>
+                <constraint firstItem="bF1-Cd-LQK" firstAttribute="top" secondItem="1S4-MT-XCh" secondAttribute="bottom" constant="40" id="0gw-4M-g2V"/>
+                <constraint firstItem="7yJ-5L-5Vq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8z8-Qw-3GC"/>
                 <constraint firstItem="1S4-MT-XCh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pi2-gZ-kWa"/>
+                <constraint firstItem="bF1-Cd-LQK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rFw-Fz-X0e"/>
+                <constraint firstItem="7yJ-5L-5Vq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="uaz-ox-ruS"/>
+                <constraint firstItem="1S4-MT-XCh" firstAttribute="top" secondItem="7yJ-5L-5Vq" secondAttribute="bottom" constant="40" id="zwj-dW-HUx"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="54.5"/>
         </view>
+        <tapGestureRecognizer id="nW0-ap-931">
+            <connections>
+                <action selector="handleTouchWithRecognizer:" destination="-1" id="zn8-eK-aj5"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>

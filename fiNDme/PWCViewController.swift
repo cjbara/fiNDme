@@ -11,6 +11,7 @@ import UIKit
 class PWCViewController: UIViewController {
 
     @IBOutlet weak var companyImage: UIImageView!
+    @IBOutlet weak var favoriteButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,8 @@ class PWCViewController: UIViewController {
         
         self.companyImage.layer.borderWidth = 3.0;
         self.companyImage.layer.borderColor = UIColor.black.cgColor
+        
+        favoriteButton.setImage(#imageLiteral(resourceName: "empty-star"), for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +33,9 @@ class PWCViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func favoriteAction(_ sender: Any) {
+        favoriteButton.setImage(#imageLiteral(resourceName: "star"), for: .normal)
+    }
 
     /*
     // MARK: - Navigation

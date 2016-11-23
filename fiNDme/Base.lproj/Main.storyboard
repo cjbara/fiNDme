@@ -131,7 +131,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bnu-0D-K8D">
-                                <rect key="frame" x="-4" y="44" width="383" height="128"/>
+                                <rect key="frame" x="-4" y="0.0" width="383" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHe-S4-TN5">
                                         <rect key="frame" x="220" y="27" width="163" height="74"/>
@@ -152,7 +152,7 @@
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzg-FD-Da5">
-                                <rect key="frame" x="284" y="197" width="50" height="50"/>
+                                <rect key="frame" x="284" y="153" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="CSc-rq-J30"/>
                                     <constraint firstAttribute="height" constant="50" id="Vbx-pS-13p"/>
@@ -163,14 +163,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-lx-SVG">
-                                <rect key="frame" x="41" y="97" width="150" height="150"/>
+                                <rect key="frame" x="41" y="53" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="ivR-x0-Ehf"/>
                                     <constraint firstAttribute="height" constant="150" id="pHf-3x-oYl"/>
                                 </constraints>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bk-AD-iWz">
-                                <rect key="frame" x="16" y="275" width="343" height="392"/>
+                                <rect key="frame" x="16" y="231" width="343" height="436"/>
                                 <connections>
                                     <segue destination="zUN-Nh-cia" kind="embed" id="uVg-rr-VNK"/>
                                 </connections>
@@ -446,51 +446,32 @@
             </objects>
             <point key="canvasLocation" x="4623" y="428"/>
         </scene>
-        <!--Match-->
-        <scene sceneID="2ri-A8-Qsw">
+        <!--Match2 View Controller-->
+        <scene sceneID="JUH-Le-8Lz">
             <objects>
-                <viewController storyboardIdentifier="MatchViewControllerId" id="b5t-oV-I5j" customClass="MatchViewController" customModule="fiNDme" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Match2ViewControllerId" id="xhC-Nf-Og7" customClass="Match2ViewController" customModule="fiNDme" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fCH-Cw-Qml"/>
-                        <viewControllerLayoutGuide type="bottom" id="0OM-to-jTF"/>
+                        <viewControllerLayoutGuide type="top" id="qXB-u7-1s1"/>
+                        <viewControllerLayoutGuide type="bottom" id="sfa-oj-RgQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0gw-dr-90d">
+                    <view key="view" contentMode="scaleToFill" id="LKu-WX-uge">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QqB-ol-iLp">
-                                <rect key="frame" x="16" y="64" width="343" height="499"/>
-                                <connections>
-                                    <segue destination="KsV-R0-iMx" kind="embed" id="M8m-D4-kH7"/>
-                                </connections>
-                            </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0x-J1-uEo">
-                                <rect key="frame" x="150" y="571" width="75" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="lhC-nX-gVe"/>
-                                    <constraint firstAttribute="height" constant="75" id="mRi-SZ-HMc"/>
-                                </constraints>
-                                <state key="normal" image="empty-star"/>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lfl-t0-Q6q">
+                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="QqB-ol-iLp" secondAttribute="leading" id="DLb-nk-R5q"/>
-                            <constraint firstItem="QqB-ol-iLp" firstAttribute="top" secondItem="fCH-Cw-Qml" secondAttribute="bottom" id="MUd-1P-au0"/>
-                            <constraint firstItem="0OM-to-jTF" firstAttribute="top" secondItem="B0x-J1-uEo" secondAttribute="bottom" constant="21" id="h9P-pm-k0M"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QqB-ol-iLp" secondAttribute="trailing" id="kJd-he-XJU"/>
-                            <constraint firstItem="B0x-J1-uEo" firstAttribute="centerX" secondItem="0gw-dr-90d" secondAttribute="centerX" id="u50-8E-lXj"/>
-                            <constraint firstItem="0OM-to-jTF" firstAttribute="top" secondItem="QqB-ol-iLp" secondAttribute="bottom" constant="104" id="ug0-xr-nc5"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Match" id="TEw-y3-PKK"/>
                     <connections>
-                        <outlet property="favoriteCompany" destination="B0x-J1-uEo" id="9vK-VT-JyE"/>
+                        <outlet property="swipeView" destination="Lfl-t0-Q6q" id="Mu9-Na-7cH"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Iwe-ZY-bPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4C-lv-ktD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2658" y="1180"/>
+            <point key="canvasLocation" x="2769" y="1180"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -741,7 +722,7 @@
                         <viewControllerLayoutGuide type="bottom" id="0xE-1I-xg9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LYw-zU-Hlv">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="392"/>
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -871,40 +852,6 @@
             </objects>
             <point key="canvasLocation" x="124" y="-330"/>
         </scene>
-        <!--Match Swipe View Controller-->
-        <scene sceneID="6ki-Vd-ro8">
-            <objects>
-                <viewController id="KsV-R0-iMx" customClass="MatchSwipeViewController" customModule="fiNDme" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8m3-nc-pW1"/>
-                        <viewControllerLayoutGuide type="bottom" id="BaX-v5-Wz0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WjQ-8M-2fi">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="499"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MVi-FU-NO1">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="400"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="oRm-7i-yIv"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="MVi-FU-NO1" secondAttribute="trailing" constant="103" id="B94-dA-scP"/>
-                            <constraint firstItem="MVi-FU-NO1" firstAttribute="leading" secondItem="WjQ-8M-2fi" secondAttribute="leading" id="CnU-Nr-Z7F"/>
-                            <constraint firstItem="MVi-FU-NO1" firstAttribute="top" secondItem="WjQ-8M-2fi" secondAttribute="top" id="l2A-5u-tiL"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="scrollView" destination="MVi-FU-NO1" id="YBm-8h-FFG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vQh-vv-odN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2657" y="1931"/>
-        </scene>
         <!--Search View Controller-->
         <scene sceneID="RgG-a6-ZI1">
             <objects>
@@ -1017,7 +964,6 @@
         <image name="Map_empty" width="340" height="455"/>
         <image name="contact" width="25" height="25"/>
         <image name="contactless_payment_reader" width="213" height="126"/>
-        <image name="empty-star" width="256" height="256"/>
         <image name="envelope" width="256" height="256"/>
         <image name="home" width="25" height="25"/>
         <image name="map" width="25" height="25"/>

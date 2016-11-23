@@ -44,6 +44,7 @@ class ProfileTableViewController: UITableViewController, UIPickerViewDataSource,
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView == major {
             return pickerDataSource.count
