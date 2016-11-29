@@ -19,6 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Helvetica", size: 12)!], for: .normal)
         
+        let attr = NSDictionary(object: UIFont(name: "Helvetica-Bold", size: 12.0)!, forKey: NSFontAttributeName as NSCopying)
+        UISegmentedControl.appearance().setTitleTextAttributes(attr as [NSObject : AnyObject] , for: .normal)
+        UISegmentedControl.appearance().tintColor = UIColor(red:0.30, green:0.85, blue:0.39, alpha:1.0)
+        UISegmentedControl.appearance().backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        UINavigationBar.appearance().tintColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        UISearchBar.appearance().tintColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
         return true
     }
 

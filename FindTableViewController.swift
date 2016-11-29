@@ -30,6 +30,7 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
         tableView.tableHeaderView = searchController.searchBar
         
         searchController.searchBar.scopeButtonTitles = ["All", "Full-time", "Internship"]
+        //searchController.searchBar.scope
         searchController.searchBar.delegate = self
         
     }

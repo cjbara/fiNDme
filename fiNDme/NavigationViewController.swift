@@ -13,10 +13,11 @@ class NavigationViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Helvetica", size: 24)!]
+        self.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Helvetica-Bold", size: 24)!, NSForegroundColorAttributeName: UIColor.white]
+        self.navigationBar.barTintColor = UIColor(red:0.54, green:0.55, blue:0.56, alpha:1.0)
         
-        //self.navigationController.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Helvetica", size: 24)!]
-
+        //self.navigationBar.tintColor = UIColor.white
+        //self.navigationBar.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
 
         // Do any additional setup after loading the view.
     }

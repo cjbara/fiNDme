@@ -32,6 +32,7 @@ class ContactViewController: UIViewController {
         super.viewDidLoad()
         //segmentedSearch.initUI()
         //segmentedSearch.selectedSegmentIndex = TabIndex.FirstChildTab.rawValue
+        
         displayCurrentTab(tabIndex: TabIndex.FirstChildTab.rawValue)
     }
     

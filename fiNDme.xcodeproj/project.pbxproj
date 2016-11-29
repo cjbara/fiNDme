@@ -124,6 +124,60 @@
 			name = "Match Views";
 			sourceTree = "<group>";
 		};
+		53CD9FE11DEE0E4400D2BFD3 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				9143F7691DD0FA910030368D /* TabBarController.swift */,
+				53CD9FDF1DEDFF6C00D2BFD3 /* NavigationViewController.swift */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		53CD9FE21DEE0E5600D2BFD3 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				9143F74D1DD0F3150030368D /* ContactViewController.swift */,
+				919E961D1DDAF3A700292231 /* ContactTableViewController.swift */,
+			);
+			name = Contact;
+			sourceTree = "<group>";
+		};
+		53CD9FE31DEE0E5B00D2BFD3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9135FFB61DECC56C004C83FD /* FavoritesCollectionViewController.swift */,
+				915CDEE01DD8EA330032817F /* CompanyViewController.swift */,
+				915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		53CD9FE41DEE0E5F00D2BFD3 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				53CD9FD71DE50CD700D2BFD3 /* Match2ViewController.swift */,
+				535FF27B1DD9226300180BC4 /* FindTableViewController.swift */,
+				53CD9FC41DE3AF8C00D2BFD3 /* SearchViewController.swift */,
+			);
+			name = Find;
+			sourceTree = "<group>";
+		};
+		53CD9FE51DEE0E6600D2BFD3 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				9143F7601DD0F5B30030368D /* MapViewController.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		53CD9FE61DEE0E6900D2BFD3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				53CD9FC21DE2AED900D2BFD3 /* ProfileTableViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
 		9143F73D1DD0F3150030368D = {
 			isa = PBXGroup;
 			children = (
@@ -156,18 +210,12 @@
 		9143F75D1DD0F40A0030368D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9135FFB61DECC56C004C83FD /* FavoritesCollectionViewController.swift */,
-				9143F74D1DD0F3150030368D /* ContactViewController.swift */,
-				53CD9FC41DE3AF8C00D2BFD3 /* SearchViewController.swift */,
-				535FF27B1DD9226300180BC4 /* FindTableViewController.swift */,
-				9143F7601DD0F5B30030368D /* MapViewController.swift */,
-				9143F7691DD0FA910030368D /* TabBarController.swift */,
-				915CDEE01DD8EA330032817F /* CompanyViewController.swift */,
-				915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */,
-				919E961D1DDAF3A700292231 /* ContactTableViewController.swift */,
-				53CD9FD71DE50CD700D2BFD3 /* Match2ViewController.swift */,
-				53CD9FC21DE2AED900D2BFD3 /* ProfileTableViewController.swift */,
-				53CD9FDF1DEDFF6C00D2BFD3 /* NavigationViewController.swift */,
+				53CD9FE61DEE0E6900D2BFD3 /* Profile */,
+				53CD9FE51DEE0E6600D2BFD3 /* Map */,
+				53CD9FE41DEE0E5F00D2BFD3 /* Find */,
+				53CD9FE31DEE0E5B00D2BFD3 /* Home */,
+				53CD9FE21DEE0E5600D2BFD3 /* Contact */,
+				53CD9FE11DEE0E4400D2BFD3 /* Layout */,
 				53CD9FA41DE23BB200D2BFD3 /* Cells */,
 			);
 			name = ViewControllers;
