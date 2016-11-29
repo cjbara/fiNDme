@@ -25,11 +25,11 @@ class CompanySwipeViewController: UIViewController {
         // Do any additional setup after loading the view.
         companyImage.image = company.logo
         
-        self.companyImage.layer.cornerRadius = self.companyImage.frame.size.width / 2;
-        self.companyImage.clipsToBounds = true;
+        //self.companyImage.layer.cornerRadius = self.companyImage.frame.size.width / 2;
+        //self.companyImage.clipsToBounds = true;
         
-        self.companyImage.layer.borderWidth = 3.0;
-        self.companyImage.layer.borderColor = UIColor.black.cgColor
+        //self.companyImage.layer.borderWidth = 3.0;
+        //self.companyImage.layer.borderColor = UIColor.black.cgColor
         
         favoriteButton.setImage(company.favorite.image, for: .normal)
     }

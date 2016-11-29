@@ -14,6 +14,7 @@
 		53CD9FC31DE2AED900D2BFD3 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FC21DE2AED900D2BFD3 /* ProfileTableViewController.swift */; };
 		53CD9FC51DE3AF8C00D2BFD3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FC41DE3AF8C00D2BFD3 /* SearchViewController.swift */; };
 		53CD9FD81DE50CD700D2BFD3 /* Match2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FD71DE50CD700D2BFD3 /* Match2ViewController.swift */; };
+		53CD9FE01DEDFF6C00D2BFD3 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FDF1DEDFF6C00D2BFD3 /* NavigationViewController.swift */; };
 		9135FFB31DECB237004C83FD /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9135FFB21DECB237004C83FD /* Database.swift */; };
 		9135FFB51DECC4B9004C83FD /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9135FFB41DECC4B9004C83FD /* FavoriteCollectionViewCell.swift */; };
 		9135FFB71DECC56C004C83FD /* FavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9135FFB61DECC56C004C83FD /* FavoritesCollectionViewController.swift */; };
@@ -47,6 +48,7 @@
 		53CD9FC21DE2AED900D2BFD3 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		53CD9FC41DE3AF8C00D2BFD3 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		53CD9FD71DE50CD700D2BFD3 /* Match2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match2ViewController.swift; sourceTree = "<group>"; };
+		53CD9FDF1DEDFF6C00D2BFD3 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		5DE8CD1C66DF5FDD1F28F55E /* Pods-fiNDme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiNDme.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiNDme/Pods-fiNDme.release.xcconfig"; sourceTree = "<group>"; };
 		5FB4A0BA1A096FA0B84FC809 /* Pods_fiNDme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiNDme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9135FFB21DECB237004C83FD /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				9135FFB61DECC56C004C83FD /* FavoritesCollectionViewController.swift */,
 				9143F74D1DD0F3150030368D /* ContactViewController.swift */,
+				53CD9FC41DE3AF8C00D2BFD3 /* SearchViewController.swift */,
 				535FF27B1DD9226300180BC4 /* FindTableViewController.swift */,
 				9143F7601DD0F5B30030368D /* MapViewController.swift */,
 				9143F7691DD0FA910030368D /* TabBarController.swift */,
@@ -164,7 +167,7 @@
 				919E961D1DDAF3A700292231 /* ContactTableViewController.swift */,
 				53CD9FD71DE50CD700D2BFD3 /* Match2ViewController.swift */,
 				53CD9FC21DE2AED900D2BFD3 /* ProfileTableViewController.swift */,
-				53CD9FC41DE3AF8C00D2BFD3 /* SearchViewController.swift */,
+				53CD9FDF1DEDFF6C00D2BFD3 /* NavigationViewController.swift */,
 				53CD9FA41DE23BB200D2BFD3 /* Cells */,
 			);
 			name = ViewControllers;
@@ -333,6 +336,7 @@
 				919E961E1DDAF3A700292231 /* ContactTableViewController.swift in Sources */,
 				535FF27C1DD9226300180BC4 /* FindTableViewController.swift in Sources */,
 				9143F76C1DD0FB220030368D /* Colors.swift in Sources */,
+				53CD9FE01DEDFF6C00D2BFD3 /* NavigationViewController.swift in Sources */,
 				53CD9FC51DE3AF8C00D2BFD3 /* SearchViewController.swift in Sources */,
 				9135FFB51DECC4B9004C83FD /* FavoriteCollectionViewCell.swift in Sources */,
 				919E96121DD913DD00292231 /* ALSingleLineHeaderView.swift in Sources */,

@@ -84,11 +84,11 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
             cell.logo.image = company.logo
             cell.favorite.setImage(company.favorite.image, for: UIControlState.normal)
             
-            cell.logo.layer.cornerRadius = cell.logo.frame.size.width / 2;
-            cell.logo.clipsToBounds = true;
+            //cell.logo.layer.cornerRadius = cell.logo.frame.size.width / 2;
+            //cell.logo.clipsToBounds = true;
             
-            cell.logo.layer.borderWidth = 3.0;
-            cell.logo.layer.borderColor = UIColor.black.cgColor
+            //cell.logo.layer.borderWidth = 3.0;
+            //cocell.logo.layer.borderColor = UIColor.black.cgColor
         }
         
         if cell.starDelegate == nil {

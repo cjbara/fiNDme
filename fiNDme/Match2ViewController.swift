@@ -21,16 +21,16 @@ class Match2ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         let deloitteVC : CompanySwipeViewController = CompanySwipeViewController(nibName: "CompanySwipeViewController", bundle: nil)
-        deloitteVC.company = db.companies[0]
+        deloitteVC.company = db.companies[14]
         
         let eyVC : CompanySwipeViewController = CompanySwipeViewController(nibName: "CompanySwipeViewController", bundle: nil)
-        eyVC.company = db.companies[1]
+        eyVC.company = db.companies[17]
         
         let pwcVC : CompanySwipeViewController = CompanySwipeViewController(nibName: "CompanySwipeViewController", bundle: nil)
-        pwcVC.company = db.companies[2]
+        pwcVC.company = db.companies[20]
         
         let kpmgVC : CompanySwipeViewController = CompanySwipeViewController(nibName: "CompanySwipeViewController", bundle: nil)
-        kpmgVC.company = db.companies[3]
+        kpmgVC.company = db.companies[23]
         
         self.addChildViewController(kpmgVC)
         swipeView.addSubview(kpmgVC.view);

@@ -27,11 +27,11 @@ class CompanyViewController: UIViewController {
         favorite.setImage(company.favorite.image, for: UIControlState.normal)
         companyImage.image = company.logo
         
-        self.companyImage.layer.cornerRadius = self.companyImage.frame.size.width / 2;
-        self.companyImage.clipsToBounds = true;
+        //self.companyImage.layer.cornerRadius = self.companyImage.frame.size.width / 2;
+        //self.companyImage.clipsToBounds = true;
         
-        self.companyImage.layer.borderWidth = 3.0;
-        self.companyImage.layer.borderColor = UIColor.black.cgColor
+        //self.companyImage.layer.borderWidth = 3.0;
+        //self.companyImage.layer.borderColor = UIColor.black.cgColor
     }
 
     override func didReceiveMemoryWarning() {
