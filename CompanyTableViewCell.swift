@@ -19,6 +19,8 @@ class CompanyTableViewCell: UITableViewCell {
     @IBOutlet weak var industries: UILabel!
     @IBOutlet weak var favorite: UIButton!
     
+    var company = Company()
+    
     var starDelegate : StarCellDelegate?
     
     override func awakeFromNib() {
@@ -36,7 +38,7 @@ class CompanyTableViewCell: UITableViewCell {
         didSet {
             name.text = companyCell.name
             industries.text = companyCell.industries
-            logo.image = companyCell.image
+            logo.image = companyCell.logo
             
         }
     }

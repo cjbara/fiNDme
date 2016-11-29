@@ -14,14 +14,18 @@ class CompanyViewController: UIViewController {
     @IBOutlet var companyName: UILabel!
     @IBOutlet var favorite: UIButton!
     
+    var db = Database()
     var company = Company()
+    var index = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        company = db.companies[index]
 
         companyName.text = company.name
         favorite.setImage(company.favorite.image, for: UIControlState.normal)
-        companyImage.image = company.image
+        companyImage.image = company.logo
         
         self.companyImage.layer.cornerRadius = self.companyImage.frame.size.width / 2;
         self.companyImage.clipsToBounds = true;
@@ -40,14 +44,18 @@ class CompanyViewController: UIViewController {
         favorite.setImage(company.favorite.image, for: UIControlState.normal)
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "accordeon" {
+            let destVC = segue.destination as! AccordionViewController
+            destVC.company = self.company
+        }
     }
-    */
+    
 
 }

@@ -12,14 +12,25 @@ class Match2ViewController: UIViewController {
 
     @IBOutlet weak var swipeView: UIScrollView!
     
+    var db = Database()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        db = (self.tabBarController as! TabBarController).db
 
         // Do any additional setup after loading the view.
-        let deloitteVC : DeloitteViewController = DeloitteViewController(nibName: "DeloitteViewController", bundle: nil)
-        let eyVC : EYViewController = EYViewController(nibName: "EYViewController", bundle: nil)
-        let pwcVC : PWCViewController = PWCViewController(nibName: "PWCViewController", bundle: nil)
-        let kpmgVC : KPMGViewController = KPMGViewController(nibName: "KPMGViewController", bundle: nil)
+        let deloitteVC : CompanySwipeViewController = CompanySwipeViewController(nibName: "CompanySwipeViewController", bundle: nil)
+        deloitteVC.company = db.companies[0]
+        
+        let eyVC : CompanySwipeViewController = CompanySwipeViewController(nibName: "CompanySwipeViewController", bundle: nil)
+        eyVC.company = db.companies[1]
+        
+        let pwcVC : CompanySwipeViewController = CompanySwipeViewController(nibName: "CompanySwipeViewController", bundle: nil)
+        pwcVC.company = db.companies[2]
+        
+        let kpmgVC : CompanySwipeViewController = CompanySwipeViewController(nibName: "CompanySwipeViewController", bundle: nil)
+        kpmgVC.company = db.companies[3]
         
         self.addChildViewController(kpmgVC)
         swipeView.addSubview(kpmgVC.view);

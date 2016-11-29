@@ -8,16 +8,22 @@
 
 import UIKit
 
-class DeloitteViewController: UIViewController {
+class CompanySwipeViewController: UIViewController {
 
+    var company: Company = Company()
+    var db = Database()
+    
     @IBOutlet weak var companyImage: UIImageView!
     @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet var companyName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        companyName.text = company.name
 
         // Do any additional setup after loading the view.
-        companyImage.image = #imageLiteral(resourceName: "Deloitte")
+        companyImage.image = company.logo
         
         self.companyImage.layer.cornerRadius = self.companyImage.frame.size.width / 2;
         self.companyImage.clipsToBounds = true;
@@ -25,7 +31,7 @@ class DeloitteViewController: UIViewController {
         self.companyImage.layer.borderWidth = 3.0;
         self.companyImage.layer.borderColor = UIColor.black.cgColor
         
-        favoriteButton.setImage(#imageLiteral(resourceName: "empty-star"), for: .normal)
+        favoriteButton.setImage(company.favorite.image, for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,23 +40,36 @@ class DeloitteViewController: UIViewController {
     }
     
     @IBAction func favoriteAction(_ sender: Any) {
-        favoriteButton.setImage(#imageLiteral(resourceName: "star"), for: .normal)
+        company.favorite.setFav()
+        favoriteButton.setImage(company.favorite.image, for: .normal)
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        /* if segue.identifier == "goToCompany2" {
+            let showCompanyVC = segue.destination as! CompanyViewController
+            let index = (sender as! NSIndexPath).row
+            showCompanyVC.db = db
+            if let i = db.companies.index(where: {$0.name == db.favorites[index].name}) {
+                showCompanyVC.index = i
+            } else {
+                showCompanyVC.index = 0
+            }
+        } */
     }
-    */
+    
     
     @IBAction func handleTouch(recognizer: UITapGestureRecognizer) {
-        let name : String = "Deloitte"
-        
-        /* SEGUE TO COMPANY DETAILS PAGE */
+        /* SEGUE TO COMPANY DETAILS PAGE
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "companyVC")
+        self.present(vc, animated: true, completion: nil)
+        */
     }
     
     /*

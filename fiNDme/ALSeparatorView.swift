@@ -45,7 +45,7 @@ class ALSeparatorView: UIView
 
     func commonInit()
     {
-        self.backgroundColor = UIColor.clear
+        self.backgroundColor = UIColor.black
     }
 
     override func draw(_ rect: CGRect)

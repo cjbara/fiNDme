@@ -12,16 +12,12 @@ import MessageUI
 
 class ContactTableViewController: UITableViewController, ButtonCellDelegate, MFMailComposeViewControllerDelegate {
     
-    var contacts: [Contact] = []
-    
+    var db = Database()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        contacts.append(Contact(name: "Jay", company: "PwC", title: "Accountant", email: "jay@pwc.com"))
-        contacts.append(Contact(name: "Steve", company: "Deloitte", title: "Accountant", email: "steve@deloitte.com"))
-        contacts.append(Contact(name: "Heather", company: "PwC", title: "Accountant", email: "heather@pwc.com"))
-        contacts.append(Contact(name: "Jesse", company: "EY", title: "Accountant", email: "jesse@ey.com"))
-
+        db = (self.tabBarController as! TabBarController).db
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -65,15 +61,15 @@ class ContactTableViewController: UITableViewController, ButtonCellDelegate, MFM
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return contacts.count
+        return db.contacts.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as! ContactTableViewCell
 
-        cell.name.text = contacts[indexPath.row].name
-        cell.detail.text = "\(contacts[indexPath.row].company) \(contacts[indexPath.row].title)"
+        cell.name.text = db.contacts[indexPath.row].name
+        cell.detail.text = "\(db.contacts[indexPath.row].company) \(db.contacts[indexPath.row].title)"
         if cell.buttonDelegate == nil {
             cell.buttonDelegate = self
         }

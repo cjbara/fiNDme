@@ -10,6 +10,8 @@ import UIKit
 
 class ProfileTableViewController: UITableViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
+    var db = Database()
+    
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var phone: UITextField!
@@ -26,6 +28,8 @@ class ProfileTableViewController: UITableViewController, UIPickerViewDataSource,
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        db = (self.tabBarController as! TabBarController).db
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -37,7 +41,12 @@ class ProfileTableViewController: UITableViewController, UIPickerViewDataSource,
         
         self.job.dataSource = self
         self.job.delegate = self
-
+        
+        name.text = db.profile.name
+        email.text = db.profile.email
+        phone.text = db.profile.phone
+        name.text = db.profile.name
+        interests.text = db.profile.interestsText
     }
     
     //MARK: Data Sources

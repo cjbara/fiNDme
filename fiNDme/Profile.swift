@@ -16,6 +16,15 @@ class Profile {
     var major: String
     var interests: [String]
     
+    init() {
+        self.email = ""
+        self.name = ""
+        self.phone = ""
+        self.school = ""
+        self.major = ""
+        self.interests = []
+    }
+    
     init(name: String, email: String, phone: String, school: String, major: String, interests: [String]) {
         self.email = email
         self.name = name
@@ -38,6 +47,18 @@ class Profile {
         
         s = s.substring(to: s.index(before: s.endIndex))
         
+        return s
+    }
+    
+    var interestsText: String {
+        var s: String = ""
+        for interest in interests {
+            s += interest
+            s += ", "
+        }
+        
+        s = s.substring(to: s.index(before: s.endIndex))
+        s = s.substring(to: s.index(before: s.endIndex))
         return s
     }
 }

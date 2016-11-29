@@ -16,9 +16,7 @@ class Company {
     var jobs: String
     var contact: String
     var logo: UIImage
-    
-    var image: UIImage = UIImage(named: "Deloitte")!
-    
+        
     var favorite = Favorite()
     
     init() {

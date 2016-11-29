@@ -10,6 +10,8 @@ import UIKit
 import ALAccordion
 
 class AccordionViewController: ALAccordionController {
+    
+    var company: Company = Company()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +19,13 @@ class AccordionViewController: ALAccordionController {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
         let section1 = storyboard.instantiateViewController(withIdentifier: "aboutVC") as! AboutViewController
+        section1.company = company
+        
         let section2 = storyboard.instantiateViewController(withIdentifier: "jobsVC") as! JobsViewController
+        section2.company = company
+        
         let section3 = storyboard.instantiateViewController(withIdentifier: "contactVC") as! ContactCompanyViewController
+        section3.company = company
         
         self.setViewControllers(section1, section2, section3)
     }
@@ -32,9 +39,14 @@ class AccordionViewController: ALAccordionController {
 class AboutViewController: UIViewController, ALAccordionSectionDelegate
 {
     
+    var company: Company = Company()
+    
+    @IBOutlet var aboutLabel: UILabel!
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        aboutLabel.text = company.about
         
         // Add gesture recognizer to header
         self.headerView.addGestureRecognizer(
@@ -106,10 +118,13 @@ class AboutViewController: UIViewController, ALAccordionSectionDelegate
 
 class JobsViewController: UIViewController, ALAccordionSectionDelegate
 {
+    var company: Company = Company()
+    @IBOutlet var jobsLabel: UILabel!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+        jobsLabel.text = company.jobs
         // Add gesture recognizer to header
         self.headerView.addGestureRecognizer(
             UITapGestureRecognizer(target: self, action: #selector(headerTapped(_:)))
@@ -181,9 +196,13 @@ class JobsViewController: UIViewController, ALAccordionSectionDelegate
 
 class ContactCompanyViewController: UIViewController, ALAccordionSectionDelegate
 {
+    var company: Company = Company()
+    @IBOutlet var contactLabel: UILabel!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        contactLabel.text = company.contact
         
         // Add gesture recognizer to header
         self.headerView.addGestureRecognizer(

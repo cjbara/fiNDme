@@ -10,10 +10,8 @@ import UIKit
 
 class FindTableViewController: UITableViewController, StarCellDelegate {
 
-    var companies = [Company]()
-    var companyList = Companies()
-    
-    var filteredCompanies = [Company]()
+    var db = Database()
+    var filteredCompanies: [Company] = []
     let searchController = UISearchController(searchResultsController: nil)
     
     enum ErrorHandling:Error
@@ -24,12 +22,7 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        db = (self.tabBarController as! TabBarController).db
         
         // UISearchController
         searchController.searchResultsUpdater = self
@@ -39,41 +32,10 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
         searchController.searchBar.scopeButtonTitles = ["All", "Full-time", "Internship"]
         searchController.searchBar.delegate = self
         
-        companyList = Companies(companyArray: companies)
-    
-        loadCompanies()
-    }
-    
-    func loadCompanies() {
-        
-        let names = ["Deloitte","KPMG","PricewaterhouseCoopers","Ernst & Young","Accenture"]
-        let industries = ["Accounting, Consulting", "Accounting, Tax, Audit", "Accounting, Consulting", "Accounting", "Consulting"]
-        let about = ["","","","",""]
-        let jobs = ["Full-time, Internship", "Full-time", "Full-time, Internship","Internship","Full-time"]
-        let contacts = ["","","","",""]
-        let logos = [#imageLiteral(resourceName: "Deloitte"),#imageLiteral(resourceName: "KPMG"),#imageLiteral(resourceName: "PwC"),#imageLiteral(resourceName: "EY"),#imageLiteral(resourceName: "emptyLogo")]
-        
-        //for name in names {
-        for i in 0 ..< names.count {
-            let companyToAdd = Company(name: names[i], industries: industries[i], about: about[i], jobs: jobs[i], contact: contacts[i], logo: logos[i])
-            companyList.addCompany(company: companyToAdd)
-        }
-        /*
-        let company1 = Company(name: "Deloitte", industries: "Accounting, Consulting", about: "Hi", jobs: "Full-Time, Internship", contact: "TBD", logo: #imageLiteral(resourceName: "Deloitte"))
-        let company2 = Company(name: "KPMG", industries: "Accounting, Tax, Audit", about: "Hi",jobs: "Full-Time", contact: "TBD", logo: #imageLiteral(resourceName: "KPMG"))
-        let company3 = Company(name: "PricewaterhouseCoopers", industries: "Accounting, Consulting", about: "Hi",jobs: "Full-Time, Internship", contact: "TBD", logo: #imageLiteral(resourceName: "PwC"))
-        let company4 = Company(name: "Ernst & Young", industries: "Accounting", about: "Hi", jobs: "Internship", contact: "TBD", logo: #imageLiteral(resourceName: "EY"))
-
-        companyList.addCompany(company: company1)
-        companyList.addCompany(company: company2)
-        companyList.addCompany(company: company3)
-        companyList.addCompany(company: company4)
-        */
-    
     }
     
     func filterContentForSearchText(_ searchText: String, scope: String = "All") {
-        filteredCompanies = companies.filter { company in
+        filteredCompanies = db.companies.filter { company in
             let categoryMatch = (scope == "All") || (company.jobs == scope) || (company.jobs == scope)
             return  categoryMatch && company.name.lowercased().contains(searchText.lowercased())
         }
@@ -99,7 +61,7 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
         if searchController.isActive && searchController.searchBar.text != "" {
             return filteredCompanies.count
         }
-        return companyList.count
+        return db.companies.count
     }
 
     
@@ -113,13 +75,14 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
             cell.industries.text = company.industries
             cell.logo.image = company.logo
             cell.favorite.setImage(company.favorite.image, for: UIControlState.normal)
+            cell.company = company
         } else {
-            let company = companyList.companyArray[indexPath.row] as Company
+            let company = db.companies[indexPath.row] as Company
+            cell.company = company
             cell.name.text = company.name
             cell.industries.text = company.industries
             cell.logo.image = company.logo
             cell.favorite.setImage(company.favorite.image, for: UIControlState.normal)
-            //cell.logo.image = company.image
             
             cell.logo.layer.cornerRadius = cell.logo.frame.size.width / 2;
             cell.logo.clipsToBounds = true;
@@ -136,12 +99,8 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
     }
     
     func starTapped(cell: CompanyTableViewCell) {
-        
-        if cell.favorite.imageView?.image == #imageLiteral(resourceName: "empty-star") {
-            cell.favorite.setImage(#imageLiteral(resourceName: "star"), for: .normal)
-        } else {
-            cell.favorite.setImage(#imageLiteral(resourceName: "empty-star"), for: .normal)
-        }
+        cell.company.favorite.setFav()
+        cell.favorite.setImage(cell.company.favorite.image, for: .normal)
     }
 
     /*
@@ -199,10 +158,15 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
             if let cell = sender as? UITableViewCell {
                 let indexPath = self.tableView.indexPath(for: cell)
                 if let index = indexPath?.row {
+                    showCompanyVC.db = db
                     if (searchController.isActive && searchController.searchBar.text != "") {
-                        showCompanyVC.company = filteredCompanies[index]
+                        if let i = db.companies.index(where: {$0.name == filteredCompanies[index].name}) {
+                            showCompanyVC.index = i
+                        } else {
+                            showCompanyVC.index = 0
+                        }
                     } else {
-                        showCompanyVC.company = self.companyList.companyArray[index]
+                        showCompanyVC.index = index
                     }
                 }
             }
