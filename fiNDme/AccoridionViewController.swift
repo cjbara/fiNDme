@@ -12,9 +12,13 @@ import ALAccordion
 class AccordionViewController: ALAccordionController {
     
     var company: Company = Company()
+    var db = Database()
+    var index = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        company = db.companies[index]
         
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         

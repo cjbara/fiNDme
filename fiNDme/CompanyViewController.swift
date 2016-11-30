@@ -56,6 +56,8 @@ class CompanyViewController: UIViewController {
         if segue.identifier == "accordeon" {
             let destVC = segue.destination as! AccordionViewController
             destVC.company = self.company
+            destVC.db = self.db
+            destVC.index = self.index
         }
     }
     

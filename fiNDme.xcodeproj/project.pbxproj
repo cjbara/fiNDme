@@ -294,6 +294,7 @@
 				TargetAttributes = {
 					9143F7451DD0F3150030368D = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 499G2MTD9Y;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -533,6 +534,7 @@
 			baseConfigurationReference = 1A7B6904835C1839542CFE6C /* Pods-fiNDme.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 499G2MTD9Y;
 				INFOPLIST_FILE = fiNDme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coryjbara.fiNDme;
@@ -547,6 +549,7 @@
 			baseConfigurationReference = 5DE8CD1C66DF5FDD1F28F55E /* Pods-fiNDme.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 499G2MTD9Y;
 				INFOPLIST_FILE = fiNDme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coryjbara.fiNDme;
