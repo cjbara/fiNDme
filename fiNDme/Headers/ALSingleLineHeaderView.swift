@@ -35,7 +35,7 @@ class ALSingleLineHeaderView: UIView
     let titleLabel: UILabel =
     {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 17.0)
+        label.font = UIFont(name: "Helvetica-Bold", size: 18)
         label.textColor = UIColor.black
         label.textAlignment = .center
 

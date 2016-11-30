@@ -31,6 +31,7 @@
 		915CDEE51DD8EC6F0032817F /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE41DD8EC6F0032817F /* Company.swift */; };
 		915CDEE71DD8ECD50032817F /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE61DD8ECD50032817F /* Favorite.swift */; };
 		915CDEE91DD8FEF00032817F /* AccoridionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */; };
+		9176221A1DEEAE2E00B4199A /* NoFavoritesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917622191DEEAE2E00B4199A /* NoFavoritesCollectionViewCell.swift */; };
 		919E960F1DD913B500292231 /* ALSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E960D1DD913B500292231 /* ALSeparatorView.swift */; };
 		919E96121DD913DD00292231 /* ALSingleLineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E96111DD913DD00292231 /* ALSingleLineHeaderView.swift */; };
 		919E961C1DDAF34B00292231 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E961B1DDAF34B00292231 /* ContactTableViewCell.swift */; };
@@ -69,6 +70,7 @@
 		915CDEE41DD8EC6F0032817F /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		915CDEE61DD8ECD50032817F /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccoridionViewController.swift; sourceTree = "<group>"; };
+		917622191DEEAE2E00B4199A /* NoFavoritesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoFavoritesCollectionViewCell.swift; sourceTree = "<group>"; };
 		919E960D1DD913B500292231 /* ALSeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALSeparatorView.swift; sourceTree = "<group>"; };
 		919E96111DD913DD00292231 /* ALSingleLineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ALSingleLineHeaderView.swift; path = Headers/ALSingleLineHeaderView.swift; sourceTree = "<group>"; };
 		919E961B1DDAF34B00292231 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				535FF27D1DD9227D00180BC4 /* CompanyTableViewCell.swift */,
 				919E961B1DDAF34B00292231 /* ContactTableViewCell.swift */,
 				9135FFB41DECC4B9004C83FD /* FavoriteCollectionViewCell.swift */,
+				917622191DEEAE2E00B4199A /* NoFavoritesCollectionViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				9143F76A1DD0FA910030368D /* TabBarController.swift in Sources */,
 				53CD9FC31DE2AED900D2BFD3 /* ProfileTableViewController.swift in Sources */,
 				53CD9FB31DE2471900D2BFD3 /* CompanySwipeViewController.swift in Sources */,
+				9176221A1DEEAE2E00B4199A /* NoFavoritesCollectionViewCell.swift in Sources */,
 				915CDEE91DD8FEF00032817F /* AccoridionViewController.swift in Sources */,
 				9143F74E1DD0F3150030368D /* ContactViewController.swift in Sources */,
 				915CDEE11DD8EA330032817F /* CompanyViewController.swift in Sources */,

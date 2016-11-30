@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreGraphics
 
 private let reuseIdentifier = "favoriteCell"
 
@@ -29,7 +30,6 @@ class FavoritesCollectionViewController: UICollectionViewController {
     override func viewDidAppear(_ animated: Bool) {
     
         self.collectionView?.reloadData()
-        print(db.favorites.count)
         
     }
 
@@ -59,19 +59,31 @@ class FavoritesCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
+        
+        if db.favorites.count == 0 {
+            return 1
+        }
         return db.favorites.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FavoriteCollectionViewCell
-    
-        // Configure the cell
-        let company = db.favorites[indexPath.row]
-        cell.company = company
-        cell.image.image = company.logo
-        cell.name.text = company.name
-    
-        return cell
+        
+        if db.favorites.count != 0 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FavoriteCollectionViewCell
+            
+            // Configure the cell
+            let company = db.favorites[indexPath.row]
+            cell.company = company
+            cell.image.image = company.logo
+            cell.name.text = company.name
+            
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "noFavorites", for: indexPath) as! NoFavoritesCollectionViewCell
+            
+            cell.frame = CGRect(origin: CGPoint(x: cell.frame.origin.x,y :cell.frame.origin.y), size: CGSize(width: self.view.frame.width, height: self.view.frame.height))
+            return cell
+        }
     }
 
     // MARK: UICollectionViewDelegate
@@ -86,12 +98,16 @@ class FavoritesCollectionViewController: UICollectionViewController {
             } else {
                 showCompanyVC.index = 0
             }
-        }
+        } 
     }
     
     // Set the indexPath of the selected item as the sender for the segue
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "goToCompany", sender: indexPath)
+        if db.favorites.count != 0 {
+            performSegue(withIdentifier: "goToCompany", sender: indexPath)
+        } else {
+            self.tabBarController?.selectedIndex = 2;
+        }
     }
     
     /*

@@ -65,6 +65,7 @@ class CompanySwipeViewController: UIViewController {
     
     
     @IBAction func handleTouch(recognizer: UITapGestureRecognizer) {
+        print("Test")
         /* SEGUE TO COMPANY DETAILS PAGE
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "companyVC")
