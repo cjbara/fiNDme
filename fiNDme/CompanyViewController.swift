@@ -21,6 +21,8 @@ class CompanyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
         company = db.companies[index]
 
         companyName.text = company.name

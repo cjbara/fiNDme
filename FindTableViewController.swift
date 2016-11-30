@@ -33,6 +33,9 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
         //searchController.searchBar.scope
         searchController.searchBar.delegate = self
         
+        //self.definesPresentationContext = YES;
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.definesPresentationContext = true
     }
     
     func filterContentForSearchText(_ searchText: String, scope: String = "All") {
@@ -184,6 +187,7 @@ extension FindTableViewController: UISearchResultsUpdating {
         let searchBar = searchController.searchBar
         let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
         filterContentForSearchText(searchController.searchBar.text!, scope: scope)
+        //self.definesPresentationContext = true
     }
 }
 

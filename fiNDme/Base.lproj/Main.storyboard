@@ -74,11 +74,11 @@
                         <viewControllerLayoutGuide type="bottom" id="IVx-AZ-LJO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wQx-Na-4Bz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bnu-0D-K8D">
-                                <rect key="frame" x="-4" y="0.0" width="383" height="128"/>
+                                <rect key="frame" x="-4" y="44" width="383" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHe-S4-TN5">
                                         <rect key="frame" x="220" y="27" width="163" height="74"/>
@@ -99,7 +99,7 @@
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzg-FD-Da5">
-                                <rect key="frame" x="284" y="153" width="50" height="50"/>
+                                <rect key="frame" x="284" y="197" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="CSc-rq-J30"/>
                                     <constraint firstAttribute="height" constant="50" id="Vbx-pS-13p"/>
@@ -110,14 +110,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-lx-SVG">
-                                <rect key="frame" x="41" y="53" width="150" height="150"/>
+                                <rect key="frame" x="41" y="97" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="ivR-x0-Ehf"/>
                                     <constraint firstAttribute="height" constant="150" id="pHf-3x-oYl"/>
                                 </constraints>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bk-AD-iWz">
-                                <rect key="frame" x="16" y="231" width="343" height="436"/>
+                                <rect key="frame" x="16" y="275" width="343" height="343"/>
                                 <connections>
                                     <segue destination="zUN-Nh-cia" kind="embed" identifier="accordeon" id="uVg-rr-VNK"/>
                                 </connections>
@@ -704,7 +704,7 @@
                         <viewControllerLayoutGuide type="bottom" id="0xE-1I-xg9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LYw-zU-Hlv">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="436"/>
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="343"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -843,7 +843,7 @@
         <scene sceneID="pIb-Cn-1WO">
             <objects>
                 <collectionViewController id="RjB-Cw-kd4" customClass="FavoritesCollectionViewController" customModule="fiNDme" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="s01-nZ-YcS">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="s01-nZ-YcS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
@@ -1014,7 +1014,7 @@
         <!--Search-->
         <scene sceneID="qJe-og-kbC">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" id="hRX-6z-fwl" customClass="NavigationViewController" customModule="fiNDme" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hRX-6z-fwl" customClass="NavigationViewController" customModule="fiNDme" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="search" id="d6c-Sg-Vll"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dtc-X3-XUO">
@@ -1022,6 +1022,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="JLv-0n-km0">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="vpu-nx-3iW" kind="relationship" relationship="rootViewController" id="dmv-bu-lGh"/>
                     </connections>
@@ -1062,6 +1066,6 @@
         <image name="search" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lJ1-lz-Fg9"/>
+        <segue reference="rfN-BP-M11"/>
     </inferredMetricsTieBreakers>
 </document>
