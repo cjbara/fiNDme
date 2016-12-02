@@ -33,6 +33,9 @@ class SearchViewController: UIViewController {
         //segmentedSearch.initUI()
         //segmentedSearch.selectedSegmentIndex = TabIndex.FirstChildTab.rawValue
         displayCurrentTab(tabIndex: TabIndex.FirstChildTab.rawValue)
+        
+        self.automaticallyAdjustsScrollViewInsets = false
+
     }
     
     override func viewWillDisappear(_ animated: Bool) {

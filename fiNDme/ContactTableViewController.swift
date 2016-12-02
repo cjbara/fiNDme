@@ -19,11 +19,15 @@ class ContactTableViewController: UITableViewController, ButtonCellDelegate, MFM
         
         db = (self.tabBarController as! TabBarController).db
         
+        //self.tableView.contentInset = UIEdgeInsetsMake(-50, 0, 0, 0);
+        //self.automaticallyAdjustsScrollViewInsets = false
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
     }
     
     func configuredMailComposeViewController() -> MFMailComposeViewController {

@@ -18,8 +18,11 @@ class AccordionViewController: ALAccordionController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if (index == -1) {
+         //do nothing
+        } else {
         company = db.companies[index]
-        
+        }
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
         let section1 = storyboard.instantiateViewController(withIdentifier: "aboutVC") as! AboutViewController

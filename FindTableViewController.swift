@@ -22,6 +22,9 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        //self.tableView.contentInset = UIEdgeInsetsMake(-50, 0, 0, 0);
+        
         db = (self.tabBarController as! TabBarController).db
         
         // UISearchController
@@ -33,7 +36,6 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
         //searchController.searchBar.scope
         searchController.searchBar.delegate = self
         
-        //self.definesPresentationContext = YES;
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.definesPresentationContext = true
     }

@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1S4-MT-XCh">
-                    <rect key="frame" x="62" y="93" width="250" height="250"/>
+                    <rect key="frame" x="62" y="123" width="250" height="250"/>
                     <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="width" constant="250" id="OCZ-7t-Bng"/>
@@ -34,13 +34,13 @@
                     </connections>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deloitte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yJ-5L-5Vq">
-                    <rect key="frame" x="105" y="20" width="164" height="53"/>
+                    <rect key="frame" x="105" y="50" width="164" height="53"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="44"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bF1-Cd-LQK">
-                    <rect key="frame" x="150" y="363" width="75" height="75"/>
+                    <rect key="frame" x="150" y="383" width="75" height="75"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="75" id="Hew-gq-EiS"/>
                         <constraint firstAttribute="width" constant="75" id="I00-t2-Hj3"/>
@@ -50,14 +50,24 @@
                         <action selector="favoriteAction:" destination="-1" eventType="touchUpInside" id="NSz-1n-xDf"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8N-jW-Y2V">
+                    <rect key="frame" x="288" y="0.0" width="87" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="details:" destination="-2" eventType="touchUpInside" id="wIP-70-p3J"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="bF1-Cd-LQK" firstAttribute="top" secondItem="1S4-MT-XCh" secondAttribute="bottom" constant="20" id="0gw-4M-g2V"/>
+                <constraint firstItem="bF1-Cd-LQK" firstAttribute="top" secondItem="1S4-MT-XCh" secondAttribute="bottom" constant="10" id="0gw-4M-g2V"/>
                 <constraint firstItem="7yJ-5L-5Vq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8z8-Qw-3GC"/>
+                <constraint firstItem="q8N-jW-Y2V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BsF-3P-UIN"/>
+                <constraint firstItem="q8N-jW-Y2V" firstAttribute="leading" secondItem="7yJ-5L-5Vq" secondAttribute="trailing" constant="19" id="nvO-gF-OQf"/>
                 <constraint firstItem="1S4-MT-XCh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pi2-gZ-kWa"/>
                 <constraint firstItem="bF1-Cd-LQK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rFw-Fz-X0e"/>
-                <constraint firstItem="7yJ-5L-5Vq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="uaz-ox-ruS"/>
+                <constraint firstItem="7yJ-5L-5Vq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="uaz-ox-ruS"/>
+                <constraint firstAttribute="trailing" secondItem="q8N-jW-Y2V" secondAttribute="trailing" id="vXU-dQ-C9X"/>
                 <constraint firstItem="1S4-MT-XCh" firstAttribute="top" secondItem="7yJ-5L-5Vq" secondAttribute="bottom" constant="20" id="zwj-dW-HUx"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="54.5"/>

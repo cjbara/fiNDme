@@ -23,7 +23,11 @@ class CompanyViewController: UIViewController {
         
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         
-        company = db.companies[index]
+        if (index == -1) {
+            // do nothing
+        } else {
+            company = db.companies[index]
+        }
 
         companyName.text = company.name
         favorite.setImage(company.favorite.image, for: UIControlState.normal)
@@ -34,6 +38,8 @@ class CompanyViewController: UIViewController {
         
         //self.companyImage.layer.borderWidth = 3.0;
         //self.companyImage.layer.borderColor = UIColor.black.cgColor
+        
+
     }
 
     override func didReceiveMemoryWarning() {

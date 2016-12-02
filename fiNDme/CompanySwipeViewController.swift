@@ -32,6 +32,9 @@ class CompanySwipeViewController: UIViewController {
         //self.companyImage.layer.borderColor = UIColor.black.cgColor
         
         favoriteButton.setImage(company.favorite.image, for: .normal)
+        
+        //self.navigationController?.setNavigationBarHidden(false, animated: false)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,6 +45,31 @@ class CompanySwipeViewController: UIViewController {
     @IBAction func favoriteAction(_ sender: Any) {
         company.favorite.setFav()
         favoriteButton.setImage(company.favorite.image, for: .normal)
+    }
+    
+    @IBAction func details(_ sender: Any) {
+        print("Pressed")
+        //presentViewController(nextViewController, animated: true, completion: nil)
+        
+        //let vc = CompanyViewController()
+        //self.present(vc, animated: true, completion: nil)
+        
+        //var storyboard = UIStoryboard(name: "Main.storyboard", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil) //if bundle is nil the main bundle will be used
+        let controller1 = storyboard.instantiateViewController(withIdentifier: "companyVC") as! CompanyViewController
+        let controller2 = storyboard.instantiateViewController(withIdentifier: "accordionVC") as! AccordionViewController
+
+        controller1.index = -1
+        controller1.company=company
+        
+        controller2.index = -1
+        controller2.company=company
+
+        
+        self.present(controller1, animated: true, completion: nil)
+        //controller.exercisedPassed = "Ex1"
+        
+        //self.presentViewController(controller, animated: true, completion: nil)
     }
     
     

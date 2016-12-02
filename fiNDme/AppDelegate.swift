@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let attr = NSDictionary(object: UIFont(name: "Helvetica-Bold", size: 12.0)!, forKey: NSFontAttributeName as NSCopying)
         UISegmentedControl.appearance().setTitleTextAttributes(attr as [NSObject : AnyObject] , for: .normal)
-        UISegmentedControl.appearance().tintColor = UIColor(red:0.30, green:0.85, blue:0.39, alpha:1.0)
-        UISegmentedControl.appearance().backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        UISegmentedControl.appearance().tintColor = UIColor(red:0.54, green:0.55, blue:0.56, alpha:1.0)
+        UISegmentedControl.appearance().backgroundColor = UIColor(red:1.0, green:1.0, blue:1.0, alpha:1.0)
         
         UINavigationBar.appearance().tintColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         

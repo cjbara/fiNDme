@@ -34,6 +34,8 @@ class ContactViewController: UIViewController {
         //segmentedSearch.selectedSegmentIndex = TabIndex.FirstChildTab.rawValue
         
         displayCurrentTab(tabIndex: TabIndex.FirstChildTab.rawValue)
+        
+        self.automaticallyAdjustsScrollViewInsets = false
     }
     
     override func viewWillDisappear(_ animated: Bool) {
