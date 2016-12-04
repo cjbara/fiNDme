@@ -40,6 +40,10 @@ class FindTableViewController: UITableViewController, StarCellDelegate {
         //self.definesPresentationContext = true
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.tableView.reloadData()
+    }
+    
     func filterContentForSearchText(_ searchText: String, scope: String = "All") {
         filteredCompanies = db.companies.filter { company in
             let categoryMatch = (scope == "All") || (company.jobs == scope) || (company.jobs == scope)
