@@ -48,8 +48,62 @@ class MapViewController: UIViewController {
         
         pwcCircle.layer.cornerRadius = pwcCircle.frame.width/2
         pwcCircle.clipsToBounds = true
+        
+        deloitteImage.isHidden = true
+        eyImage.isHidden = true
+        pwcImage.isHidden = true
+        kpmgImage.isHidden = true
+        
+        deloitteCircle.isHidden = true
+        eyCircle.isHidden = true
+        pwcCircle.isHidden = true
+        kpmgCircle.isHidden = true
+        
+        for item in db.favorites {
+            if item.name == "Deloitte" {
+                deloitteImage.isHidden = false
+                deloitteCircle.isHidden = false
+            } else if item.name == "Ernst & Young" {
+                eyImage.isHidden = false
+                eyCircle.isHidden = false
+            } else if item.name == "KPMG LLP" {
+                kpmgImage.isHidden = false
+                kpmgCircle.isHidden = false
+            } else if item.name == "PwC" {
+                pwcImage.isHidden = false
+                pwcCircle.isHidden = false
+            }
+        }
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        deloitteImage.isHidden = true
+        eyImage.isHidden = true
+        pwcImage.isHidden = true
+        kpmgImage.isHidden = true
+        
+        deloitteCircle.isHidden = true
+        eyCircle.isHidden = true
+        pwcCircle.isHidden = true
+        kpmgCircle.isHidden = true
+        
+        for item in db.favorites {
+            if item.name == "Deloitte" {
+                deloitteImage.isHidden = false
+                deloitteCircle.isHidden = false
+            } else if item.name == "Ernst & Young" {
+                eyImage.isHidden = false
+                eyCircle.isHidden = false
+            } else if item.name == "KPMG LLP" {
+                kpmgImage.isHidden = false
+                kpmgCircle.isHidden = false
+            } else if item.name == "PwC" {
+                pwcImage.isHidden = false
+                pwcCircle.isHidden = false
+            }
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
