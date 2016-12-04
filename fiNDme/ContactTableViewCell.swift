@@ -30,12 +30,5 @@ class ContactTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    @IBAction func buttonTap(_ sender: Any) {
-        if let delegate = buttonDelegate {
-            delegate.cellTapped(cell: self)
-        }
-    }
-    
 
 }

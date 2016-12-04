@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import MessageUI
 
-class ContactTableViewController: UITableViewController, ButtonCellDelegate, MFMailComposeViewControllerDelegate {
+class ContactTableViewController: UITableViewController, MFMailComposeViewControllerDelegate {
     
     var db = Database()
         
@@ -30,13 +30,13 @@ class ContactTableViewController: UITableViewController, ButtonCellDelegate, MFM
         
     }
     
-    func configuredMailComposeViewController() -> MFMailComposeViewController {
+    func configuredMailComposeViewController(contact: Contact) -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
         
-        mailComposerVC.setToRecipients(["someone@somewhere.com"])
-        mailComposerVC.setSubject("Sending you an in-app e-mail...")
-        mailComposerVC.setMessageBody("Sending e-mail in-app is not so bad!", isHTML: false)
+        mailComposerVC.setToRecipients([contact.email])
+        mailComposerVC.setSubject("Notre Dame Career Fair Follow Up")
+        mailComposerVC.setMessageBody("Dear \(contact.name),\n\nThank you for meeting with me at the Notre Dame career fair the other day. I would love to stay in touch regarding future opportunities at \(contact.company)!\n\nSincerely,\nJoe Smith", isHTML: false)
         
         return mailComposerVC
     }
@@ -67,25 +67,11 @@ class ContactTableViewController: UITableViewController, ButtonCellDelegate, MFM
         // #warning Incomplete implementation, return the number of rows
         return db.contacts.count
     }
-
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as! ContactTableViewCell
-
-        cell.name.text = db.contacts[indexPath.row].name
-        cell.detail.text = "\(db.contacts[indexPath.row].company) \(db.contacts[indexPath.row].title)"
-        if cell.buttonDelegate == nil {
-            cell.buttonDelegate = self
-        }
-        /*
-        cell.message.tag = indexPath.row
-        cell.message.addTarget(self, action: "buttonClicked", for: UIControlEvents.touchUpInside)
-        */
-        return cell
-    }
-    
-    func cellTapped(cell: ContactTableViewCell) {
-        let mailComposeViewController = configuredMailComposeViewController()
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let contact = db.contacts[indexPath.row]
+        
+        let mailComposeViewController = configuredMailComposeViewController(contact: contact)
         if MFMailComposeViewController.canSendMail() {
             self.present(mailComposeViewController, animated: true, completion: nil)
         } else {
@@ -93,6 +79,18 @@ class ContactTableViewController: UITableViewController, ButtonCellDelegate, MFM
         }
     }
     
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as! ContactTableViewCell
+
+        cell.name.text = db.contacts[indexPath.row].name
+        cell.detail.text = "\(db.contacts[indexPath.row].company) \(db.contacts[indexPath.row].title)"
+        /*
+        cell.message.tag = indexPath.row
+        cell.message.addTarget(self, action: "buttonClicked", for: UIControlEvents.touchUpInside)
+        */
+        return cell
+    }
+   
     /*
     func buttonClicked(sender:UIButton) {
         let buttonRow = sender.tag

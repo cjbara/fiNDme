@@ -676,16 +676,13 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLk-bg-opN">
+                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLk-bg-opN">
                                             <rect key="frame" x="317" y="17" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="Fzb-h8-S3c"/>
                                                 <constraint firstAttribute="width" constant="30" id="mfq-i6-z66"/>
                                             </constraints>
                                             <state key="normal" title="Button" image="envelope"/>
-                                            <connections>
-                                                <action selector="buttonTap:" destination="mHo-5a-gCs" eventType="touchUpInside" id="J8p-U2-X5Y"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
