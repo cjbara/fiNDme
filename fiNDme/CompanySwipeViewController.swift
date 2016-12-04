@@ -16,6 +16,7 @@ class CompanySwipeViewController: UIViewController {
     @IBOutlet weak var companyImage: UIImageView!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet var companyName: UILabel!
+    @IBOutlet var companyMatch: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
