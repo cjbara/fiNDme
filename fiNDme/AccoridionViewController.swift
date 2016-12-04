@@ -21,7 +21,7 @@ class AccordionViewController: ALAccordionController {
         if (index == -1) {
          //do nothing
         } else {
-        company = db.companies[index]
+            company = db.companies[index]
         }
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         

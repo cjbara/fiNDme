@@ -122,7 +122,7 @@
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Lzg-FD-Da5" firstAttribute="top" secondItem="Bnu-0D-K8D" secondAttribute="bottom" constant="25" id="1AK-em-5T4"/>
                             <constraint firstItem="0cY-lx-SVG" firstAttribute="top" secondItem="Bnu-0D-K8D" secondAttribute="bottom" constant="-75" id="36B-Fh-7zt"/>
