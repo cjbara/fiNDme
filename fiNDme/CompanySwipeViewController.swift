@@ -33,6 +33,10 @@ class CompanySwipeViewController: UIViewController {
         companyIndustry.text = company.industries
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        favoriteButton.setImage(company.favorite.image, for: .normal)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
