@@ -16,6 +16,7 @@ class Company {
     var jobs: String
     var contact: String
     var logo: UIImage
+    var match: String
         
     var favorite = Favorite()
     
@@ -26,14 +27,16 @@ class Company {
         jobs = "Job information"
         contact = "My name is cory"
         logo = #imageLiteral(resourceName: "Deloitte")
+        match = "90%"
     }
  
-    init(name: String, industries: String, about: String, jobs: String, contact: String, logo: UIImage) {
+    init(name: String, industries: String, about: String, jobs: String, contact: String, logo: UIImage, match: String) {
         self.name = name
         self.industries = industries
         self.about = about
         self.jobs = jobs
         self.contact = contact
         self.logo = logo
+        self.match = match
     }
 }

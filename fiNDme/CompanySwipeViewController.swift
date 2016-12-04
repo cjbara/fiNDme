@@ -9,14 +9,15 @@
 import UIKit
 
 class CompanySwipeViewController: UIViewController {
-
+    
     var company: Company = Company()
     var db = Database()
     
-    @IBOutlet weak var companyImage: UIImageView!
+    @IBOutlet var companyImage: UIButton!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet var companyName: UILabel!
     @IBOutlet var companyMatch: UILabel!
+    @IBOutlet var companyIndustry: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,18 +25,13 @@ class CompanySwipeViewController: UIViewController {
         companyName.text = company.name
 
         // Do any additional setup after loading the view.
-        companyImage.image = company.logo
-        
-        //self.companyImage.layer.cornerRadius = self.companyImage.frame.size.width / 2;
-        //self.companyImage.clipsToBounds = true;
-        
-        //self.companyImage.layer.borderWidth = 3.0;
-        //self.companyImage.layer.borderColor = UIColor.black.cgColor
+        companyImage.setImage(company.logo, for: .normal)
         
         favoriteButton.setImage(company.favorite.image, for: .normal)
         
-        //self.navigationController?.setNavigationBarHidden(false, animated: false)
-
+        companyMatch.text = company.match
+        companyIndustry.text = company.industries
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,37 +39,10 @@ class CompanySwipeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func favoriteAction(_ sender: Any) {
+    @IBAction func favoriteAction(_ sender: UIButton) {
         company.favorite.setFav()
         favoriteButton.setImage(company.favorite.image, for: .normal)
     }
-    
-    @IBAction func details(_ sender: Any) {
-        print("Pressed")
-        //presentViewController(nextViewController, animated: true, completion: nil)
-        
-        //let vc = CompanyViewController()
-        //self.present(vc, animated: true, completion: nil)
-        
-        //var storyboard = UIStoryboard(name: "Main.storyboard", bundle: nil)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil) //if bundle is nil the main bundle will be used
-        let controller1 = storyboard.instantiateViewController(withIdentifier: "companyVC") as! CompanyViewController
-        let controller2 = storyboard.instantiateViewController(withIdentifier: "accordionVC") as! AccordionViewController
-
-        controller1.index = -1
-        controller1.company=company
-        
-        controller2.index = -1
-        controller2.company=company
-
-        
-        self.present(controller1, animated: true, completion: nil)
-        //controller.exercisedPassed = "Ex1"
-        
-        //self.presentViewController(controller, animated: true, completion: nil)
-    }
-    
-    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -92,25 +61,19 @@ class CompanySwipeViewController: UIViewController {
         } */
     }
     
-    
-    @IBAction func handleTouch(recognizer: UITapGestureRecognizer) {
-        print("Test")
-        /* SEGUE TO COMPANY DETAILS PAGE
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "companyVC")
-        self.present(vc, animated: true, completion: nil)
-        */
+    @IBAction func companyImageClick(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil) //if bundle is nil the main bundle will be used
+        let controller1 = storyboard.instantiateViewController(withIdentifier: "companyVC") as! CompanyViewController
+        let controller2 = storyboard.instantiateViewController(withIdentifier: "accordionVC") as! AccordionViewController
+        
+        controller1.index = -1
+        controller1.company = company
+        
+        controller2.index = -1
+        controller2.company = company
+        
+        self.navigationController!.pushViewController(controller1, animated: true)
+        
     }
     
-    /*
-    @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
-        let translation = recognizer.translationInView(self.view)
-        if let view = recognizer.view {
-            view.center = CGPoint(x:view.center.x + translation.x,
-                                  y:view.center.y + translation.y)
-        }
-        recognizer.setTranslation(CGPointZero, inView: self.view)
-    }
-    */
-
 }

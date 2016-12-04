@@ -525,6 +525,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="639"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -536,6 +537,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4C-lv-ktD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2769" y="1180"/>
+        </scene>
+        <!--Company Swipe View Controller-->
+        <scene sceneID="8Fa-LU-Oqu">
+            <objects>
+                <viewController storyboardIdentifier="companySwipeVC" id="zPw-AR-h08" customClass="CompanySwipeViewController" customModule="fiNDme" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kk9-CX-GNo"/>
+                        <viewControllerLayoutGuide type="bottom" id="2sb-pi-V0B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ilt-E9-XH4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deloitte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hls-iB-hvI">
+                                <rect key="frame" x="121" y="10" width="132.5" height="41.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1f-C5-Igh">
+                                <rect key="frame" x="150" y="351.5" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Fzg-7L-4hT"/>
+                                    <constraint firstAttribute="height" constant="75" id="sk0-qR-EgN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="favoriteAction:" destination="zPw-AR-h08" eventType="touchUpInside" id="wgP-cY-B9v"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Match Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMO-lo-vpi">
+                                <rect key="frame" x="114" y="296.5" width="106.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="96%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofv-7Z-ieM">
+                                <rect key="frame" x="225.5" y="296" width="36.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audit, Tax, International" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDG-l7-FFh">
+                                <rect key="frame" x="114" y="322.5" width="125.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsT-Po-CBD">
+                                <rect key="frame" x="87.5" y="71.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3Sf-kT-9Nt"/>
+                                    <constraint firstAttribute="height" constant="200" id="F4z-Xy-Jem"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="companyImageClick:" destination="zPw-AR-h08" eventType="touchUpInside" id="KAV-Yo-XiL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KDG-l7-FFh" firstAttribute="top" secondItem="CMO-lo-vpi" secondAttribute="bottom" constant="5" id="5p2-Ky-U1a"/>
+                            <constraint firstItem="Ofv-7Z-ieM" firstAttribute="top" secondItem="UsT-Po-CBD" secondAttribute="bottom" constant="24.5" id="B4M-Jo-kIi"/>
+                            <constraint firstItem="Hls-iB-hvI" firstAttribute="top" secondItem="Ilt-E9-XH4" secondAttribute="top" constant="10" id="HfR-Fx-ICg"/>
+                            <constraint firstItem="CMO-lo-vpi" firstAttribute="leading" secondItem="Ilt-E9-XH4" secondAttribute="leadingMargin" constant="98" id="I4x-Ma-1gw"/>
+                            <constraint firstItem="KDG-l7-FFh" firstAttribute="leading" secondItem="Ilt-E9-XH4" secondAttribute="leadingMargin" constant="98" id="KPh-GX-Gq8"/>
+                            <constraint firstItem="Ofv-7Z-ieM" firstAttribute="centerY" secondItem="CMO-lo-vpi" secondAttribute="centerY" id="TIC-FU-ozv"/>
+                            <constraint firstItem="Ofv-7Z-ieM" firstAttribute="leading" secondItem="CMO-lo-vpi" secondAttribute="trailing" constant="5" id="VSX-4c-Nnz"/>
+                            <constraint firstItem="UsT-Po-CBD" firstAttribute="top" secondItem="Hls-iB-hvI" secondAttribute="bottom" constant="20" id="e4N-YX-72L"/>
+                            <constraint firstItem="CMO-lo-vpi" firstAttribute="top" secondItem="UsT-Po-CBD" secondAttribute="bottom" constant="25" id="fNR-tq-dNV"/>
+                            <constraint firstItem="Hls-iB-hvI" firstAttribute="centerX" secondItem="Ilt-E9-XH4" secondAttribute="centerX" id="mcT-ct-fDk"/>
+                            <constraint firstItem="v1f-C5-Igh" firstAttribute="top" secondItem="KDG-l7-FFh" secondAttribute="bottom" constant="15" id="n1w-ZY-k0b"/>
+                            <constraint firstItem="v1f-C5-Igh" firstAttribute="centerX" secondItem="Ilt-E9-XH4" secondAttribute="centerX" id="nlf-1V-fl5"/>
+                            <constraint firstItem="KDG-l7-FFh" firstAttribute="leading" secondItem="CMO-lo-vpi" secondAttribute="leading" id="r4u-aF-YSj"/>
+                            <constraint firstItem="UsT-Po-CBD" firstAttribute="centerX" secondItem="Ilt-E9-XH4" secondAttribute="centerX" id="uUB-pQ-tTy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="companyImage" destination="UsT-Po-CBD" id="yTK-HN-yvW"/>
+                        <outlet property="companyIndustry" destination="KDG-l7-FFh" id="JKa-02-AKT"/>
+                        <outlet property="companyMatch" destination="Ofv-7Z-ieM" id="3zD-T0-wmD"/>
+                        <outlet property="companyName" destination="Hls-iB-hvI" id="wO0-pb-lik"/>
+                        <outlet property="favoriteButton" destination="v1f-C5-Igh" id="7aH-Bt-LbH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3B-Ee-vfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2769" y="1931"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -765,7 +854,7 @@
                                     <outlet property="industries" destination="BH9-rt-Kr6" id="RbZ-zS-rE8"/>
                                     <outlet property="logo" destination="ofh-AS-qCX" id="Ykv-Zm-YbS"/>
                                     <outlet property="name" destination="Hyi-rB-UMI" id="fnz-MT-WO5"/>
-                                    <segue destination="PfD-9n-XY2" kind="show" id="lJ1-lz-Fg9"/>
+                                    <segue destination="PfD-9n-XY2" kind="show" identifier="showCompanyFromMatch" id="lJ1-lz-Fg9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

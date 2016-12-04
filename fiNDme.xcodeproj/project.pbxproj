@@ -11,7 +11,6 @@
 		535FF27C1DD9226300180BC4 /* FindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535FF27B1DD9226300180BC4 /* FindTableViewController.swift */; };
 		535FF27E1DD9227D00180BC4 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535FF27D1DD9227D00180BC4 /* CompanyTableViewCell.swift */; };
 		53CD9FB31DE2471900D2BFD3 /* CompanySwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FB21DE2471900D2BFD3 /* CompanySwipeViewController.swift */; };
-		53CD9FBB1DE24A9A00D2BFD3 /* CompanySwipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53CD9FBA1DE24A9A00D2BFD3 /* CompanySwipeViewController.xib */; };
 		53CD9FC31DE2AED900D2BFD3 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FC21DE2AED900D2BFD3 /* ProfileTableViewController.swift */; };
 		53CD9FC51DE3AF8C00D2BFD3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FC41DE3AF8C00D2BFD3 /* SearchViewController.swift */; };
 		53CD9FD81DE50CD700D2BFD3 /* Match2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD9FD71DE50CD700D2BFD3 /* Match2ViewController.swift */; };
@@ -47,7 +46,6 @@
 		535FF27B1DD9226300180BC4 /* FindTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindTableViewController.swift; path = ../FindTableViewController.swift; sourceTree = "<group>"; };
 		535FF27D1DD9227D00180BC4 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyTableViewCell.swift; path = ../CompanyTableViewCell.swift; sourceTree = "<group>"; };
 		53CD9FB21DE2471900D2BFD3 /* CompanySwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanySwipeViewController.swift; sourceTree = "<group>"; };
-		53CD9FBA1DE24A9A00D2BFD3 /* CompanySwipeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanySwipeViewController.xib; sourceTree = "<group>"; };
 		53CD9FC21DE2AED900D2BFD3 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		53CD9FC41DE3AF8C00D2BFD3 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		53CD9FD71DE50CD700D2BFD3 /* Match2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match2ViewController.swift; sourceTree = "<group>"; };
@@ -120,15 +118,6 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
-		53CD9FAB1DE2464A00D2BFD3 /* Match Views */ = {
-			isa = PBXGroup;
-			children = (
-				53CD9FB21DE2471900D2BFD3 /* CompanySwipeViewController.swift */,
-				53CD9FBA1DE24A9A00D2BFD3 /* CompanySwipeViewController.xib */,
-			);
-			name = "Match Views";
-			sourceTree = "<group>";
-		};
 		53CD9FE11DEE0E4400D2BFD3 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +153,7 @@
 				53CD9FD71DE50CD700D2BFD3 /* Match2ViewController.swift */,
 				535FF27B1DD9226300180BC4 /* FindTableViewController.swift */,
 				53CD9FC41DE3AF8C00D2BFD3 /* SearchViewController.swift */,
+				53CD9FB21DE2471900D2BFD3 /* CompanySwipeViewController.swift */,
 			);
 			name = Find;
 			sourceTree = "<group>";
@@ -231,7 +221,6 @@
 			isa = PBXGroup;
 			children = (
 				9143F74F1DD0F3150030368D /* Main.storyboard */,
-				53CD9FAB1DE2464A00D2BFD3 /* Match Views */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -326,7 +315,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53CD9FBB1DE24A9A00D2BFD3 /* CompanySwipeViewController.xib in Resources */,
 				9143F7561DD0F3150030368D /* LaunchScreen.storyboard in Resources */,
 				9143F7531DD0F3150030368D /* Assets.xcassets in Resources */,
 				9143F7511DD0F3150030368D /* Main.storyboard in Resources */,

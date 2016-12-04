@@ -20,17 +20,19 @@ class Match2ViewController: UIViewController {
         
         db = (self.tabBarController as! TabBarController).db
 
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
         // Do any additional setup after loading the view.
-        let deloitteVC : CompanySwipeViewController = CompanySwipeViewController(nibName: "CompanySwipeViewController", bundle: nil)
+        let deloitteVC = storyboard.instantiateViewController(withIdentifier: "companySwipeVC") as! CompanySwipeViewController
         deloitteVC.company = db.companies[14]
         
-        let eyVC : CompanySwipeViewController = CompanySwipeViewController(nibName: "CompanySwipeViewController", bundle: nil)
+        let eyVC = storyboard.instantiateViewController(withIdentifier: "companySwipeVC") as! CompanySwipeViewController
         eyVC.company = db.companies[17]
         
-        let pwcVC : CompanySwipeViewController = CompanySwipeViewController(nibName: "CompanySwipeViewController", bundle: nil)
+        let pwcVC = storyboard.instantiateViewController(withIdentifier: "companySwipeVC") as! CompanySwipeViewController
         pwcVC.company = db.companies[20]
         
-        let kpmgVC : CompanySwipeViewController = CompanySwipeViewController(nibName: "CompanySwipeViewController", bundle: nil)
+        let kpmgVC = storyboard.instantiateViewController(withIdentifier: "companySwipeVC") as! CompanySwipeViewController
         kpmgVC.company = db.companies[23]
         
         self.addChildViewController(kpmgVC)
@@ -72,7 +74,6 @@ class Match2ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
