@@ -68,13 +68,9 @@ class CompanySwipeViewController: UIViewController {
     @IBAction func companyImageClick(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil) //if bundle is nil the main bundle will be used
         let controller1 = storyboard.instantiateViewController(withIdentifier: "companyVC") as! CompanyViewController
-        let controller2 = storyboard.instantiateViewController(withIdentifier: "accordionVC") as! AccordionViewController
         
         controller1.index = -1
         controller1.company = company
-        
-        controller2.index = -1
-        controller2.company = company
         
         self.navigationController!.pushViewController(controller1, animated: true)
         

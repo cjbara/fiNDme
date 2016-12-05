@@ -30,10 +30,7 @@
 		915CDEE11DD8EA330032817F /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE01DD8EA330032817F /* CompanyViewController.swift */; };
 		915CDEE51DD8EC6F0032817F /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE41DD8EC6F0032817F /* Company.swift */; };
 		915CDEE71DD8ECD50032817F /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE61DD8ECD50032817F /* Favorite.swift */; };
-		915CDEE91DD8FEF00032817F /* AccoridionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */; };
 		9176221A1DEEAE2E00B4199A /* NoFavoritesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917622191DEEAE2E00B4199A /* NoFavoritesCollectionViewCell.swift */; };
-		919E960F1DD913B500292231 /* ALSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E960D1DD913B500292231 /* ALSeparatorView.swift */; };
-		919E96121DD913DD00292231 /* ALSingleLineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E96111DD913DD00292231 /* ALSingleLineHeaderView.swift */; };
 		919E961C1DDAF34B00292231 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E961B1DDAF34B00292231 /* ContactTableViewCell.swift */; };
 		919E961E1DDAF3A700292231 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E961D1DDAF3A700292231 /* ContactTableViewController.swift */; };
 		919E96201DDAF42400292231 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E961F1DDAF42400292231 /* Contact.swift */; };
@@ -69,10 +66,7 @@
 		915CDEE01DD8EA330032817F /* CompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
 		915CDEE41DD8EC6F0032817F /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		915CDEE61DD8ECD50032817F /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
-		915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccoridionViewController.swift; sourceTree = "<group>"; };
 		917622191DEEAE2E00B4199A /* NoFavoritesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoFavoritesCollectionViewCell.swift; sourceTree = "<group>"; };
-		919E960D1DD913B500292231 /* ALSeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALSeparatorView.swift; sourceTree = "<group>"; };
-		919E96111DD913DD00292231 /* ALSingleLineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ALSingleLineHeaderView.swift; path = Headers/ALSingleLineHeaderView.swift; sourceTree = "<group>"; };
 		919E961B1DDAF34B00292231 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		919E961D1DDAF3A700292231 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		919E961F1DDAF42400292231 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
@@ -141,8 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				9135FFB61DECC56C004C83FD /* FavoritesCollectionViewController.swift */,
-				915CDEE01DD8EA330032817F /* CompanyViewController.swift */,
-				915CDEE81DD8FEF00032817F /* AccoridionViewController.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -172,6 +164,14 @@
 				53CD9FC21DE2AED900D2BFD3 /* ProfileTableViewController.swift */,
 			);
 			name = Profile;
+			sourceTree = "<group>";
+		};
+		91181F901DF4D8E10042AE25 /* Company */ = {
+			isa = PBXGroup;
+			children = (
+				915CDEE01DD8EA330032817F /* CompanyViewController.swift */,
+			);
+			name = Company;
 			sourceTree = "<group>";
 		};
 		9143F73D1DD0F3150030368D = {
@@ -206,6 +206,7 @@
 		9143F75D1DD0F40A0030368D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				91181F901DF4D8E10042AE25 /* Company */,
 				53CD9FE61DEE0E6900D2BFD3 /* Profile */,
 				53CD9FE51DEE0E6600D2BFD3 /* Map */,
 				53CD9FE41DEE0E5F00D2BFD3 /* Find */,
@@ -228,8 +229,6 @@
 		9143F7651DD0F6470030368D /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				919E960D1DD913B500292231 /* ALSeparatorView.swift */,
-				919E96111DD913DD00292231 /* ALSingleLineHeaderView.swift */,
 				9143F7491DD0F3150030368D /* AppDelegate.swift */,
 				9143F7521DD0F3150030368D /* Assets.xcassets */,
 				9143F7541DD0F3150030368D /* LaunchScreen.storyboard */,
@@ -382,8 +381,6 @@
 				53CD9FE01DEDFF6C00D2BFD3 /* NavigationViewController.swift in Sources */,
 				53CD9FC51DE3AF8C00D2BFD3 /* SearchViewController.swift in Sources */,
 				9135FFB51DECC4B9004C83FD /* FavoriteCollectionViewCell.swift in Sources */,
-				919E96121DD913DD00292231 /* ALSingleLineHeaderView.swift in Sources */,
-				919E960F1DD913B500292231 /* ALSeparatorView.swift in Sources */,
 				915CDEE71DD8ECD50032817F /* Favorite.swift in Sources */,
 				53CD9FD81DE50CD700D2BFD3 /* Match2ViewController.swift in Sources */,
 				9135FFB71DECC56C004C83FD /* FavoritesCollectionViewController.swift in Sources */,
@@ -393,7 +390,6 @@
 				53023FDC1DF227580095BA89 /* View.swift in Sources */,
 				53CD9FB31DE2471900D2BFD3 /* CompanySwipeViewController.swift in Sources */,
 				9176221A1DEEAE2E00B4199A /* NoFavoritesCollectionViewCell.swift in Sources */,
-				915CDEE91DD8FEF00032817F /* AccoridionViewController.swift in Sources */,
 				9143F74E1DD0F3150030368D /* ContactViewController.swift in Sources */,
 				915CDEE11DD8EA330032817F /* CompanyViewController.swift in Sources */,
 				919E96201DDAF42400292231 /* Contact.swift in Sources */,
